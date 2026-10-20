@@ -32,3 +32,6 @@ Build refuses to overwrite an existing database. Produce a new version or reconc
 - Confirm opcode mapping, live traces, register effects, call ownership and function extent before promoting a candidate to recovered.
 - The database is a search cache, **not** the sole authority. Keep the canonical sanitized registry and dated execution receipts versioned in GitHub, and local raw evidence on Host 02.
 - Store new discoveries with immutable evidence references and stable function IDs. Update [current state](CURRENT_STATE.md) and [knowledge index](KNOWLEDGE_INDEX.md) after test-backed advancement.
+
+## Runtime SFA3 RAM profile extension (2026-10-20)
+[Runtime report](SFA3_RAM_COMPATIBILITY_V01.md) and [machine-readable profile](SFA3_RAM_PROFILE_V01.json) record dynamic player structures and verified 8-byte box-table-shaped data. Host 02 database additively includes `ram_structures`, `ram_slots`, `ram_fields`, `ram_observations`, `ram_issue_links`, `ram_box_decodes`, and empty `function_ram_xrefs`. Integrity and FK checks passed. Existing function/call records preserved. Do **not** populate xrefs merely from a RAM address or from data table decoding: record the actual 68000 instruction and confirmed function ownership first.
