@@ -42,3 +42,8 @@ Keep [CURRENT_STATE](CURRENT_STATE.md) short and updated. Add dated receipts for
 
 ## External SFA3 and CPS2 research sources
 - [External SFA3 source index V01](EXTERNAL_SFA3_SOURCE_INDEX_V01.json): seven machine-readable upstream references; explicit platform, revision and evidence limitations. Includes PS1 Alpha 3 recompilation, CPS2 Alpha 3 hitbox Lua/RAM maps, Alpha 3 arcade patch examples and CPS2 recompilation methodology. **No exact sfa3us complete decompilation verified.**
+
+## Tested SFA3 RAM compatibility and function-knowledge ingestion
+- [SFA3 RAM comparison and 8-byte hitbox record tests](SFA3_RAM_COMPATIBILITY_V01.md): read-only HBMAME input-driven RAM checkpoints, 2 observed player bases, 20/20 original-format records decoded; no instruction xref yet.
+- [Machine-readable SFA3 RAM profile](SFA3_RAM_PROFILE_V01.json): per-field status, 0x400 player stride versus 0x100 projectile stride, DB import counts and limitations.
+- [Tools: compare](../tools/compare_sfa3_ram_v02.py), [decode box records](../tools/decode_sfa3_hitbox_data_v01.py), [ingest RAM](../tools/ingest_sfa3_ram_v01.py), [ingest decoded records](../tools/ingest_sfa3_box_decode_v01.py), [query](../tools/query_sfa3_ram_v01.py).
