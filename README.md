@@ -26,3 +26,8 @@ Only commit **tools, source, patch deltas, scripts, docs, manifests and suitably
 - [32 sampled ROM-data-to-emulator address matches](docs/PROGRAM_MAPPING_SAMPLES_V02.json) (opcode fetch mapping still unverified).
 - [Function/address leads registry](docs/FUNCTION_LEADS_V01.json) (hypotheses kept separate from verified recovered functions).
 - [Community patch backlog](TODO.md) (all gameplay fixes remain open).
+
+## Instruction-aware recovery milestone
+- [Verified M68000 CFG candidate recovery and 26-byte GNU assembler ROM round-trip](docs/INSTRUCTION_RECOVERY_V01.md).
+- [59 candidate function entrypoints (not yet promoted)](docs/FUNCTION_REGISTRY_V01.json).
+- [Community fix checklist](TODO.md) remains open until gameplay parity tests pass.
