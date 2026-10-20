@@ -1,0 +1,60 @@
+{
+  "schema": "sfz3mix.function_leads.v01",
+  "scope": "CPS2/SFZ3 Mix v0.32; isolated until Drive registry resolves project-specific mapping",
+  "address_space": "HBMAME :maincpu disassembly addresses; no verified mapping to original archive member byte offsets",
+  "source_archive_sha256": "867b8356872a034ec7e06f776bf757ec2095fee7616931b71f720f30369806ab",
+  "entries": [
+    {
+      "id": "LEAD-01",
+      "start": "0x00331C",
+      "end": "0x003324",
+      "observation": "move.l D1/D2/D3 into A4-indexed memory; buffer-like sequence in disassembly",
+      "evidence": "D:\\AIOS_SFZ3MIX_V032\\evidence\\disasm_00331c.txt",
+      "status": "DISASSEMBLY_VERIFIED_ROLE_UNVERIFIED",
+      "related_todo": [
+        "continue-counter score",
+        "continue-screen sprite artifacts"
+      ],
+      "next": "correlate runtime trace before role attribution"
+    },
+    {
+      "id": "LEAD-02",
+      "start": "0x025C40",
+      "end": "0x025CC0",
+      "observation": "branch/call cluster ending in sub.w D7, ($11a,A5) at 0x025CC0",
+      "evidence": "D:\\AIOS_SFZ3MIX_V032\\evidence\\disasm_025cc0.txt",
+      "status": "DISASSEMBLY_VERIFIED_ROLE_UNVERIFIED",
+      "related_todo": [
+        "continue-counter score"
+      ],
+      "next": "trace register/memory effects through continue frame transition"
+    },
+    {
+      "id": "LEAD-03",
+      "start": "0x026438",
+      "observation": "Prior candidate sprite writer address; not verified as source of visual artifacts",
+      "evidence": "prior project continuity; local byte offset not established",
+      "status": "HYPOTHESIS_ONLY",
+      "related_todo": [
+        "continue-screen blue sprite fragments"
+      ],
+      "next": "capture write breakpoint and corresponding sprite attribute data"
+    },
+    {
+      "id": "LEAD-04",
+      "start": "0xFF0000..0xFFFFFF",
+      "observation": "HBMAME debugger cheatinit and cheatnextf produced RAM candidates",
+      "evidence": "D:\\AIOS_SFZ3MIX_V032\\evidence\\score_candidates.xml",
+      "status": "RAM_CANDIDATES_ONLY",
+      "related_todo": [
+        "continue-counter score"
+      ],
+      "next": "filter candidates, then watch verified write sources"
+    }
+  ],
+  "rules": [
+    "A lead is not a recovered function until entrypoint, bytes, role, address-space mapping, and runtime/static provenance are established",
+    "Do not infer ROM offsets from emulator addresses",
+    "No community bug may be marked fixed from byte-level classification alone"
+  ]
+}
