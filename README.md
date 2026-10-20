@@ -6,11 +6,15 @@ This repository tracks **incremental patches to the existing SFZ3 Mix v0.32 CPS2
 
 **New agent?** Read [AGENTS.md](AGENTS.md), then [current status and next action](docs/CURRENT_STATE.md), [community issue backlog](TODO.md), and [knowledge / evidence index](docs/KNOWLEDGE_INDEX.md). The detailed receipts below are retained as historical evidence, not separate competing handoffs.
 
+## Primary working artifact
+
+**The extracted v0.32 ROM program and its related ROM components are the working targets.** Work directly from the existing verified ROM files on Host 02. **Do not instruct agents to unzip or re-extract the distribution ZIP as a standard prerequisite.** The ZIP is only historical input provenance or an optional emulator packaging detail. For the currently indexed CPU program, use `D:\AIOS_SFZ3MIX_V032\tools\sz3mx.03` only after verifying it matches the authoritative original CPU member SHA-256 `b5f7a1598e4f91a5113c506505b482b2cd1a19e366fe31471740e45dbd204691`; do not assume all copies match.
+
 ## Current confirmed baseline (2026-10-19)
 - Host 02 working tree: `D:\AIOS_SFZ3MIX_V032` (local, not committed).
 - Runtime-confirmed continue symptom: score field changes from 0 before defeat to 1 after continuing.
 - HBMAME 0.289.3 CPS2Turbo / Motorola 68000 was used to reproduce the issue.
-- Original downloaded archive SHA-256: `867B8356872A034EC7E06F776BF757EC2095FEE7616931B71F720F30369806AB`.
+- Historical distribution archive SHA-256 (provenance only): `867B8356872A034EC7E06F776BF757EC2095FEE7616931B71F720F30369806AB`.
 - Symptom **reproduced**, causative RAM/68000 writer **not yet isolated**; there is no accepted patch.
 
 ## Immediate next work
