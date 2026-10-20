@@ -37,3 +37,6 @@ Produce reversible patches for **SFZ3 Mix v0.32 as an FBNeo-compatible CPS2 ROM*
 - [Historical tools, attempts and evidence](RE_ENGINEERING_HANDOFF_2026-10-20.md)
 
 Update this short document only after testing; preserve immutable historic reports.
+
+## New function database capability
+Function Database V01 passed the Host 02 SQLite build and address query tests: 59 candidate entries, 76 static direct-call sites with unresolved caller owners, and 4 issue associations. See [Function Database V01](FUNCTION_DATABASE_V01.md). These are searchable leads, not confirmed recovered functions.
