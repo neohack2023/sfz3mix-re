@@ -39,3 +39,6 @@ Keep [CURRENT_STATE](CURRENT_STATE.md) short and updated. Add dated receipts for
 
 ## Original unmodified comparison reference
 [Original Capcom sfa3us revision manifest and acquisition status](ORIGINAL_SFA3US_REFERENCE.md): exact CRCs, required parent components, and lawful-source verification gates. **Identified but not acquired or verified locally.**
+
+## External SFA3 and CPS2 research sources
+- [External SFA3 source index V01](EXTERNAL_SFA3_SOURCE_INDEX_V01.json): seven machine-readable upstream references; explicit platform, revision and evidence limitations. Includes PS1 Alpha 3 recompilation, CPS2 Alpha 3 hitbox Lua/RAM maps, Alpha 3 arcade patch examples and CPS2 recompilation methodology. **No exact sfa3us complete decompilation verified.**
