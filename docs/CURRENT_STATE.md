@@ -55,3 +55,8 @@ Function Database V01 passed the Host 02 SQLite build and address query tests: 5
 
 ## Latest validation and storage warning
 Last runtime audit (2026-10-20) reconfirmed extracted CPU member SHA-256 `b5f7a1598e4f91a5113c506505b482b2cd1a19e366fe31471740e45dbd204691`, five new Python scripts pass syntax checks, and the upgraded SQLite database passes `PRAGMA integrity_check` with 59 functions, 76 calls, 28 RAM slots, 88 observations, 20 box decodes, and 0 function-RAM xrefs. **D: free space was only 39,845,888 bytes (~38 MiB).** Cause of the additional reduction was not established; investigate before any further bulk capture.
+
+## Authority recovery checkpoint — 2026-10-20
+**BLOCKED; tracing has not resumed.** [Failure receipt and proposed registration](AUTHORITY_RECOVERY_2026-10-20.md) records a current Drive registry no_match for SFZ3, partial Host 02 router inspection, and a subsequent host disconnect. No valid canonical binding was recovered or activated. The repository-qualified scope in that receipt is a REVIEW proposal only. Root AGENTS.md is absent from the D: runtime workspace; use the existing GitHub entrypoint, without cloning.
+
+First resolve the governed registration and exact D: workspace admission, capture an authorized preflight result, then recheck CPU hash and disk space. ROM/SQLite integrity and free space were not rechecked in this attempt. Existing 59 candidates, 76 calls, 20 decodes and zero verified function-RAM xrefs remain the last documented checkpoint. No emulator launch, RAM/ROM write, DB migration or issue fix occurred.
