@@ -28,3 +28,6 @@ Use this directory of links to find verified results, unresolved leads, and reus
 
 ## Document maintenance
 Keep [CURRENT_STATE](CURRENT_STATE.md) short and updated. Add dated receipts for significant discoveries, and link them here. Preserve existing file URLs rather than moving old reports into new folders. Never check a community TODO merely because assembly or packaging tests passed. See [AGENTS.md](../AGENTS.md).
+
+## Searchable function database
+- [Function Database V01](FUNCTION_DATABASE_V01.md) documents the indexed SQLite schema and commands. The derived DB stays local on Host 02; builder and sanitized source registry live in GitHub.
