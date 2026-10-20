@@ -48,5 +48,6 @@ Keep [CURRENT_STATE](CURRENT_STATE.md) short and updated. Add dated receipts for
 - [Machine-readable SFA3 RAM profile](SFA3_RAM_PROFILE_V01.json): per-field status, 0x400 player stride versus 0x100 projectile stride, DB import counts and limitations.
 - [Tools: compare](../tools/compare_sfa3_ram_v02.py), [decode box records](../tools/decode_sfa3_hitbox_data_v01.py), [ingest RAM](../tools/ingest_sfa3_ram_v01.py), [ingest decoded records](../tools/ingest_sfa3_box_decode_v01.py), [query](../tools/query_sfa3_ram_v01.py).
 
-## Authority recovery and blocked trace continuation
-- [Authority recovery receipt, inactive registration proposal and resume sequence](AUTHORITY_RECOVERY_2026-10-20.md): current Drive registry has no matching SFZ3 row; Host 02 disconnected during remaining configuration reads. No preflight authorization recovered, no new runtime observations or function xrefs. Includes exact evidence limits, pending read identifiers, missing registration requirement, and trace/DB acceptance gates. Review proposal only; not canonical authority.
+## Approved registration and runtime collision instruction accesses
+- [Authority recovery receipt with successful continuation](AUTHORITY_RECOVERY_2026-10-20.md): Drive row 24 and Host 02 binding verified; canonical preflight PASS. Fifty access samples / nine exact instruction sites; function ownership unresolved.
+- [Bounded read-only HBMAME probe](../tools/collision_access_v01.lua) and [additive SQLite ingestion](../tools/ingest_collision_access_v01.py): 74 RAM-field links, existing records preserved, integrity/FKs PASS. Raw output remains local. Preserve fixed output files before a repeat.
