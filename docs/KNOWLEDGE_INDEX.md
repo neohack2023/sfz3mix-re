@@ -36,3 +36,6 @@ Keep [CURRENT_STATE](CURRENT_STATE.md) short and updated. Add dated receipts for
 
 ## Searchable function database
 - [Function Database V01](FUNCTION_DATABASE_V01.md) documents the indexed SQLite schema and commands. The derived DB stays local on Host 02; builder and sanitized source registry live in GitHub.
+
+## Original unmodified comparison reference
+[Original Capcom sfa3us revision manifest and acquisition status](ORIGINAL_SFA3US_REFERENCE.md): exact CRCs, required parent components, and lawful-source verification gates. **Identified but not acquired or verified locally.**
