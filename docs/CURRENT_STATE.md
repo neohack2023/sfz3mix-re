@@ -46,3 +46,9 @@ Function Database V01 passed the Host 02 SQLite build and address query tests: 5
 
 ## Unmodified Capcom base ROM reference
 [sfa3us source and CRC manifest](ORIGINAL_SFA3US_REFERENCE.md) identified; no verified local original has been found or acquired. This remains a separate comparison reference, not a replacement for hacked v0.32.
+
+## Latest runtime RAM/collision-table evidence (2026-10-20)
+- [New read-only runtime comparison](SFA3_RAM_COMPATIBILITY_V01.md) shows dynamic original-SFA3-profile player structures at 0xFF8400 and 0xFF8800 (**0x400 player slot stride**); two additional historical player slots inactive. Projectile base 0xFF9400 / 0x100 stride remains untested with a fired projectile. An initial probe wrongly used 0x100 as player spacing; that interpretation is superseded.
+- Historical pointer+box-ID indexing resolved **20/20 active samples** to readable, plausible 8-byte dimension records within the hash-verified extracted v0.32 CPU program (**16 distinct addresses**). This corroborates stored data structure, not engine collision use.
+- SQLite function database contains 2 RAM structure pools, 28 slots, 14 fields, 88 observations, 2 hitbox-issue investigation links and 20 decoded box entries. Previous 59 function candidates and 76 call sites retained; **0 verified instruction-to-RAM/function xrefs**.
+- Next gate: bounded read-only instruction/memory access trace at 0xFF8490, 0xFF849C, 0xFF8890, 0xFF889C and corresponding ROM record addresses during real attacks; only after verified PC and function ownership should xrefs be promoted.
