@@ -37,3 +37,6 @@ wsl -d AIOS-Ubuntu-22.04 -- bash /mnt/d/AIOS_SFZ3MIX_V032/tools/assembly_roundtr
 ```
 
 Do not commit the ROM archive, individual ROM members, firmware/keys, emulators, decrypted dumps, or raw machine-code inventories. Do not create another game clone. No CI run was needed.
+
+## Storage safety checkpoint
+A final Host 02 check found **96,468,992 bytes free on D:**, so additional bulk disassembly or video capture must be deferred or directed to an approved location with verified room. The isolated cross-assembler files total approximately 5.0 MB and the Python vendor directory approximately 9.0 MB; the larger decrease in free space observed during this session is **not attributed to these tools without evidence**. No unrelated files were deleted. The original archive hash was rechecked and still matches its pinned value, and the disposable rebuild ZIP is absent.
