@@ -151,5 +151,37 @@
     "evidence/sfa3_ram_comparison_v02.json",
     "evidence/sfa3_hitbox_pointer_decode_v01.json"
   ],
-  "doc": "docs/SFA3_RAM_COMPATIBILITY_V01.md"
+  "doc": "docs/SFA3_RAM_COMPATIBILITY_V01.md",
+  "collision_engine_v02": {
+    "receipt": "docs/COLLISION_ENGINE_RECOVERY_V02.json",
+    "result_field": {
+      "offset": "0x21C",
+      "width_bytes": 2,
+      "writer_pc": "0x02C1DC",
+      "observed_writes": 20,
+      "observed_reads": 0,
+      "observation_intervals": [
+        2939,
+        2946
+      ],
+      "consumer_status": "UNRESOLVED_BOUNDED_NEGATIVE"
+    },
+    "dual_record_reads": {
+      "pointer_offset": "0x9C",
+      "selector_offset": "0xCB",
+      "record_stride": 8,
+      "observed_record_offsets": [
+        2,
+        6
+      ],
+      "function_ownership": "UNRESOLVED"
+    },
+    "wrapper_slots": [
+      "0xFF8400",
+      "0xFF8800",
+      "0xFF8C00",
+      "0xFF9000"
+    ],
+    "active_player_count_claim": 2
+  }
 }
