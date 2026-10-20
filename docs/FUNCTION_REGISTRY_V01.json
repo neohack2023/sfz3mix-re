@@ -18,8 +18,8 @@
     "instruction_budget": 25000,
     "budget_hit": false,
     "classification_semantics": "static candidates, not proof of code/data or executed instructions",
-    "total_function_entry_count": 60,
-    "recovered_callable_region_count": 1
+    "total_function_entry_count": 61,
+    "recovered_callable_region_count": 2
   },
   "entries": [
     {
@@ -578,6 +578,27 @@
       "mapping_status": "EXACT_RECOVERED_REGION_OPCODE_FILE_PARITY",
       "reconstruction": "docs/COLLISION_RECONSTRUCTION_V01.json",
       "ownership_limit": "entry-bounded region, not exclusive ownership; all external/indirect incoming paths not enumerated"
+    },
+    {
+      "id": "FUNC_REC_02C17E",
+      "cpu_address": "0x02C17E",
+      "source": "docs/COLLISION_ENGINE_RECOVERY_V02.json",
+      "status": "RUNTIME_CALLABLE_WRAPPER_WITH_SHARED_LEAF_TAIL",
+      "linked_community_todos": [
+        "hitboxes"
+      ],
+      "runtime_confirmed": true,
+      "function_bounds_confirmed": true,
+      "end_exclusive": "0x02C1E2",
+      "shared_body_function_id": "FUNC_REC_02C19A",
+      "exclusive_prefix_end": "0x02C19A",
+      "ownership_limit": "Shared leaf blocks; upstream caller owner and indirect entries unresolved"
     }
-  ]
+  ],
+  "collision_engine_v02": {
+    "receipt": "docs/COLLISION_ENGINE_RECOVERY_V02.json",
+    "database_functions": 61,
+    "database_calls": 80,
+    "remaining_unowned_collision_sites": 7
+  }
 }
