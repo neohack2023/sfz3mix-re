@@ -36,3 +36,6 @@ python tools/rom_rebuild_v01.py roundtrip --source ORIGINAL.zip --output disposa
 
 ## Privacy and licensing
 Never commit ROM members, CPS2 keys, emulator binaries, source archive dumps or full in-game assets. The byte-classification report and test ZIP remain local, while this sanitized receipt and original authored scripts reside in GitHub.
+
+## Addendum: whole-range runtime data mapping probes (2026-10-20)
+Two read-only HBMAME tests collected 32-byte snapshots at 32 addresses from `0x000000` to `0x5FFFC0`, including the earlier disassembly addresses and boundaries throughout the 6 MiB CPU member. **All 32/32 samples matched the original `sz3mx.03` bytes at the same numeric file offsets (1,024 sampled bytes total)**. Scripts: [`program_space_probe_v01.lua`](../tools/program_space_probe_v01.lua), [`program_space_probe_v02.lua`](../tools/program_space_probe_v02.lua), [`compare_program_space_v01.py`](../tools/compare_program_space_v01.py), and [`compare_program_space_v02.py`](../tools/compare_program_space_v02.py). Sanitized details: [`PROGRAM_MAPPING_SAMPLES_V02.json`](PROGRAM_MAPPING_SAMPLES_V02.json). This demonstrates sampled **data-space** correspondence, not complete opcode-fetch parity, complete code disassembly, or proof of all intermediate addresses. The original ZIP was not modified.
