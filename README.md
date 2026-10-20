@@ -8,7 +8,7 @@ This repository tracks **incremental patches to the existing SFZ3 Mix v0.32 CPS2
 
 ## Primary working artifact
 
-**The extracted v0.32 ROM program and its related ROM components are the working targets.** Work directly from the existing verified ROM files on Host 02. **Do not instruct agents to unzip or re-extract the distribution ZIP as a standard prerequisite.** The ZIP is only historical input provenance or an optional emulator packaging detail. For the currently indexed CPU program, use `D:\AIOS_SFZ3MIX_V032\tools\sz3mx.03` only after verifying it matches the authoritative original CPU member SHA-256 `b5f7a1598e4f91a5113c506505b482b2cd1a19e366fe31471740e45dbd204691`; do not assume all copies match.
+**The extracted v0.32 ROM program and its related ROM components are the working targets.** Work directly from the existing verified ROM files on Host 02. **Do not instruct agents to unzip or re-extract the distribution ZIP as a standard prerequisite.** The ZIP is only historical input provenance or an optional emulator packaging detail. For the currently indexed CPU program, use `D:\AIOS_SFZ3MIX_V032\tools\sz3mx.03` which was hash-verified on Host 02 (2026-10-20) against the authoritative CPU member SHA-256 `b5f7a1598e4f91a5113c506505b482b2cd1a19e366fe31471740e45dbd204691`; reverify before future changes.
 
 ## Current confirmed baseline (2026-10-19)
 - Host 02 working tree: `D:\AIOS_SFZ3MIX_V032` (local, not committed).
