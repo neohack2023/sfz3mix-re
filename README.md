@@ -2,6 +2,10 @@
 
 This repository tracks **incremental patches to the existing SFZ3 Mix v0.32 CPS2 ROM**, preserving the FBNeo/HBMAME ROM workflow. It is **not** a recompilation or replacement game project.
 
+## Start here: navigation for people and agents
+
+**New agent?** Read [AGENTS.md](AGENTS.md), then [current status and next action](docs/CURRENT_STATE.md), [community issue backlog](TODO.md), and [knowledge / evidence index](docs/KNOWLEDGE_INDEX.md). The detailed receipts below are retained as historical evidence, not separate competing handoffs.
+
 ## Current confirmed baseline (2026-10-19)
 - Host 02 working tree: `D:\AIOS_SFZ3MIX_V032` (local, not committed).
 - Runtime-confirmed continue symptom: score field changes from 0 before defeat to 1 after continuing.
