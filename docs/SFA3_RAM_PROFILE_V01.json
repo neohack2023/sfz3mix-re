@@ -1,0 +1,155 @@
+{
+  "schema": "sfz3mix.ram_profile_recovery.v01",
+  "date": "2026-10-20",
+  "scope": "SFZ3 Mix v0.32 HBMAME :maincpu",
+  "reference_game": "Street Fighter Alpha 3 CPS2",
+  "source": "https://github.com/Jesuszilla/mame-rr-scripts/blob/master/cps2-hitboxes.lua",
+  "source_blob_sha": "3c4523278db5a0420d3920668a89103b00881697",
+  "canonical_cpu_member": "sz3mx.03",
+  "cpu_sha256": "b5f7a1598e4f91a5113c506505b482b2cd1a19e366fe31471740e45dbd204691",
+  "runtime_frames": [
+    3000,
+    9300,
+    10000,
+    10300,
+    10550,
+    10640,
+    10730,
+    11000,
+    13000,
+    15000,
+    16900
+  ],
+  "profile": {
+    "players": {
+      "base": "0xFF8400",
+      "slot_stride": "0x400",
+      "slot_count": 4,
+      "runtime_observed_dynamic_slots": [
+        0,
+        1
+      ],
+      "sampled_inactive_slots": [
+        2,
+        3
+      ],
+      "evidence_status": "OBSERVED_DYNAMIC_PLAYER_OBJECT_REGION"
+    },
+    "projectiles": {
+      "base": "0xFF9400",
+      "slot_stride": "0x100",
+      "slot_count": 24,
+      "sampled_inactive_slots": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "evidence_status": "UNVERIFIED_NO_PROJECTILE_SPAWN"
+    },
+    "screen_left": {
+      "address": "0xFF8290",
+      "evidence_status": "DYNAMIC_RAM_OBSERVED_NOT_VISUAL_CALIBRATED"
+    }
+  },
+  "player_fields": [
+    {
+      "name": "status",
+      "offset": "0x04",
+      "status": "RUNTIME_VALUE_VARIATION"
+    },
+    {
+      "name": "pos_x",
+      "offset": "0x10",
+      "status": "RUNTIME_VALUE_VARIATION"
+    },
+    {
+      "name": "pos_y",
+      "offset": "0x14",
+      "status": "RUNTIME_VALUE_VARIATION"
+    },
+    {
+      "name": "animation_pointer",
+      "offset": "0x1C",
+      "status": "RUNTIME_VALUE_VARIATION"
+    },
+    {
+      "name": "vulnerability_1_table",
+      "offset": "0x90",
+      "selector_offset": "0xC8",
+      "shift": 3,
+      "status": "RUNTIME_POINTER_AND_PROGRAM_TABLE_RECORD_MATCH"
+    },
+    {
+      "name": "vulnerability_2_table",
+      "offset": "0x94",
+      "selector_offset": "0xC9",
+      "shift": 3,
+      "status": "RUNTIME_POINTER_AND_PROGRAM_TABLE_RECORD_MATCH"
+    },
+    {
+      "name": "vulnerability_3_table",
+      "offset": "0x98",
+      "selector_offset": "0xCA",
+      "shift": 3,
+      "status": "RUNTIME_POINTER_AND_PROGRAM_TABLE_RECORD_MATCH"
+    },
+    {
+      "name": "push_table",
+      "offset": "0x9C",
+      "selector_offset": "0xCB",
+      "shift": 3,
+      "status": "RUNTIME_POINTER_AND_PROGRAM_TABLE_RECORD_MATCH"
+    },
+    {
+      "name": "attack_table",
+      "offset": "0xA0",
+      "selector_source": "animation+0x09",
+      "shift": 5,
+      "status": "NOT_TESTED"
+    }
+  ],
+  "table_decode_test": {
+    "player_samples": 2,
+    "frames": 11,
+    "attempted_cases": 88,
+    "active_pointer_and_id_cases": 20,
+    "valid_byte_in_program_cases": 20,
+    "plausible_8byte_dimension_records": 20,
+    "distinct_records": 16,
+    "example": {
+      "frame": 3000,
+      "player": 0,
+      "type": "push",
+      "program_offset": "0x0D6588",
+      "offset_x": 0,
+      "offset_y": 38,
+      "radius_x": 20,
+      "radius_y": 38
+    }
+  },
+  "db_import": {
+    "database_local": "D:\\AIOS_SFZ3MIX_V032\\evidence\\functions_v01.sqlite",
+    "original_function_candidates_preserved": 59,
+    "original_calls_preserved": 76,
+    "ram_structures": 2,
+    "ram_slots": 28,
+    "ram_fields": 14,
+    "ram_observations": 88,
+    "ram_issue_links": 2,
+    "ram_box_decodes": 20,
+    "verified_function_ram_xrefs": 0,
+    "integrity": "PASS"
+  },
+  "limitations": [
+    "No live instruction read/write trace yet establishes which 68000 routine accesses the box table.",
+    "Collision engine semantics and rendered-box positions not yet proved, only source-compatible record interpretation.",
+    "Projectiles were not activated; four-player slot occupancy beyond first two not tested.",
+    "Historical Lua contains write operations and must not be run unmodified as a read-only observer."
+  ],
+  "local_receipts": [
+    "evidence/sfa3_ram_comparison_v02.json",
+    "evidence/sfa3_hitbox_pointer_decode_v01.json"
+  ],
+  "doc": "docs/SFA3_RAM_COMPATIBILITY_V01.md"
+}
