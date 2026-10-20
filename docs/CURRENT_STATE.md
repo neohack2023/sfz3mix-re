@@ -43,3 +43,6 @@ Update this short document only after testing; preserve immutable historic repor
 
 ## New function database capability
 Function Database V01 passed the Host 02 SQLite build and address query tests: 59 candidate entries, 76 static direct-call sites with unresolved caller owners, and 4 issue associations. See [Function Database V01](FUNCTION_DATABASE_V01.md). These are searchable leads, not confirmed recovered functions.
+
+## Unmodified Capcom base ROM reference
+[sfa3us source and CRC manifest](ORIGINAL_SFA3US_REFERENCE.md) identified; no verified local original has been found or acquired. This remains a separate comparison reference, not a replacement for hacked v0.32.
