@@ -1,0 +1,130 @@
+{
+  "schema": "sfz3mix.external_source_index.v01",
+  "checked_date": "2026-10-20",
+  "target_rom": "Street Fighter Alpha 3 USA 980616 Sample sfa3us, compared to Street Fighter Zero 3 Mix v0.32",
+  "finding": "No verified publicly available full CPS2 sfa3us decompilation identified by this search; relevant alternatives are separate",
+  "evidence_class": "EXTERNAL_SOURCE_DISCOVERED_NOT_LOCALLY_EVALUATED",
+  "sources": [
+    {
+      "id": "EXT_SFA3_PSX_RECOMP",
+      "title": "Street Fighter Alpha 3 Recompiled",
+      "url": "https://github.com/TechnicallyComputers/Street-Fighter-Alpha-3-Recomp",
+      "platform": "PlayStation 1 (MIPS)",
+      "artifact_type": "static recompilation framework, game-specific symbols and analysis",
+      "matches_original_arcade_sfa3us": false,
+      "scope": "same game, different platform",
+      "relevance": [
+        "gameplay behavior cross-reference",
+        "recompilation methods",
+        "symbol registry methods"
+      ],
+      "limitations": [
+        "PS1 function addresses and machine code cannot be substituted for CPS2 M68000",
+        "requires independent behavioral parity"
+      ]
+    },
+    {
+      "id": "EXT_SFA3_CPS2_SUPPORT",
+      "title": "SFA3 Support Lua by 0xZERO3",
+      "url": "https://github.com/0xZERO3/sfa3_support",
+      "platform": "CPS2, emulator Lua",
+      "artifact_type": "training/internal state overlay",
+      "matches_original_arcade_sfa3us": "unverified",
+      "scope": "Street Fighter Zero/Alpha 3",
+      "relevance": [
+        "live collision/state inspection",
+        "MAME and FBNeo test harness inspiration",
+        "hitbox regression validation"
+      ],
+      "limitations": [
+        "script memory layouts must be checked against Zero 3 Mix v0.32"
+      ]
+    },
+    {
+      "id": "EXT_SFA3_CPS2_HITBOX_MAP",
+      "title": "Jesuszilla cps2-hitboxes.lua, SFA3 profile",
+      "url": "https://github.com/Jesuszilla/mame-rr-scripts/blob/master/cps2-hitboxes.lua",
+      "platform": "CPS2 Motorola 68000 RAM through emulator",
+      "artifact_type": "annotated hitbox memory profile and watchpoint logic",
+      "matches_original_arcade_sfa3us": "unverified",
+      "scope": "Street Fighter Alpha 3",
+      "relevance": [
+        "player 0xff8400 and projectile 0xff9400 candidate RAM bases",
+        "hitbox table offsets",
+        "throw/tripwire collision read probes"
+      ],
+      "limitations": [
+        "historical script; do not assume all offsets still map in v0.32",
+        "some alternate script paths write to emulator memory; only adapt as read-only initially"
+      ]
+    },
+    {
+      "id": "EXT_SFA3_DATA_CRYSTAL",
+      "title": "Street Fighter Alpha 3 CPS2 RAM map",
+      "url": "https://datacrystal.tcrf.net/wiki/Street_Fighter_Alpha_3_%28CPS2%29/RAM_map",
+      "platform": "CPS2 RAM",
+      "artifact_type": "community memory map",
+      "matches_original_arcade_sfa3us": "unverified",
+      "scope": "Street Fighter Alpha 3 CPS2",
+      "relevance": [
+        "input state, stage, global frame and player-slot candidate addresses",
+        "runtime RAM validation"
+      ],
+      "limitations": [
+        "third-party map, must independently confirm addresses",
+        "does not provide original ROM source"
+      ]
+    },
+    {
+      "id": "EXT_SFA3CE_ARCADE_PATCH",
+      "title": "Street Fighter Alpha/Zero 3 Challenger's Edition",
+      "url": "https://github.com/originalgrego/sfa3ce",
+      "platform": "CPS2 arcade",
+      "artifact_type": "IPS patch files and Mister arcade descriptors",
+      "matches_original_arcade_sfa3us": false,
+      "scope": "sfa3u USA 980904",
+      "relevance": [
+        "independent arcade hack baseline",
+        "character selection modifications",
+        "palette modifications"
+      ],
+      "limitations": [
+        "not a decompiled program",
+        "wrong unmodified revision for sfa3us; no direct offset transfers"
+      ]
+    },
+    {
+      "id": "EXT_CPS2_RECOMP_TOOLKIT",
+      "title": "tmcleroy/cps2recomp",
+      "url": "https://github.com/tmcleroy/cps2recomp",
+      "platform": "CPS2 Motorola 68000",
+      "artifact_type": "static recompilation engine and game ports",
+      "matches_original_arcade_sfa3us": false,
+      "scope": "supports SFA, SFA2 and other CPS2 games; SFA3 not listed",
+      "relevance": [
+        "opcode decode parity and translation methods",
+        "readable hand-rewritten functions",
+        "training hitbox/frame-data architecture"
+      ],
+      "limitations": [
+        "not SFA3 original decompilation",
+        "project aims PC ports, while SFZ3 Mix must remain FBNeo ROM"
+      ]
+    },
+    {
+      "id": "EXT_3S_DECOMP",
+      "title": "3rd Strike decomp",
+      "url": "https://github.com/crowded-street/3s-decomp",
+      "platform": "PS2 and CPS3 lineage",
+      "artifact_type": "decompilation project",
+      "matches_original_arcade_sfa3us": false,
+      "scope": "different game, Street Fighter III: 3rd Strike",
+      "relevance": [
+        "decomp methodology and regression tests"
+      ],
+      "limitations": [
+        "not Street Fighter Alpha 3, different source and architecture"
+      ]
+    }
+  ]
+}
