@@ -1,0 +1,563 @@
+{
+  "schema": "sfz3mix.function_registry.v01",
+  "cpu_program_sha256": "b5f7a1598e4f91a5113c506505b482b2cd1a19e366fe31471740e45dbd204691",
+  "source_archive_sha256": "867b8356872a034ec7e06f776bf757ec2095fee7616931b71f720f30369806ab",
+  "derived_from": "Host 02 m68k_cfg_v02.json",
+  "disclaimer": "Entrypoint candidates only: no verified function meanings, boundaries, or instruction-fetch parity",
+  "summary": {
+    "cpu_bytes": 6291456,
+    "static_candidate_instruction_count": 839,
+    "static_candidate_code_bytes": 2978,
+    "candidate_code_fraction_pct": 0.047,
+    "other_bytes_not_verified_as_code": 6288478,
+    "direct_calls_found": 76,
+    "candidate_function_entry_count": 59,
+    "control_flow_edges": 414,
+    "rejected_walk_events": 0,
+    "queue_entries_remaining": 0,
+    "instruction_budget": 25000,
+    "budget_hit": false,
+    "classification_semantics": "static candidates, not proof of code/data or executed instructions"
+  },
+  "entries": [
+    {
+      "id": "FUNC_CAND_0001",
+      "cpu_address": "0x0000C0",
+      "source": "vector_longword_candidate",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0002",
+      "cpu_address": "0x0000D0",
+      "source": "vector_longword_candidate",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0003",
+      "cpu_address": "0x0000DE",
+      "source": "vector_longword_candidate",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0004",
+      "cpu_address": "0x0000EC",
+      "source": "vector_longword_candidate",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0005",
+      "cpu_address": "0x0000FA",
+      "source": "vector_longword_candidate",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0006",
+      "cpu_address": "0x000108",
+      "source": "vector_longword_candidate",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0007",
+      "cpu_address": "0x000116",
+      "source": "vector_longword_candidate",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0008",
+      "cpu_address": "0x000124",
+      "source": "vector_longword_candidate",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0009",
+      "cpu_address": "0x000132",
+      "source": "vector_longword_candidate",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0010",
+      "cpu_address": "0x000140",
+      "source": "vector_longword_candidate",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0011",
+      "cpu_address": "0x00014E",
+      "source": "vector_longword_candidate",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0012",
+      "cpu_address": "0x0002AA",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0013",
+      "cpu_address": "0x00038C",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0014",
+      "cpu_address": "0x000538",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0015",
+      "cpu_address": "0x000564",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0016",
+      "cpu_address": "0x00056A",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0017",
+      "cpu_address": "0x000572",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0018",
+      "cpu_address": "0x00057A",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0019",
+      "cpu_address": "0x0005CA",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0020",
+      "cpu_address": "0x000976",
+      "source": "reset_pc_structural",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0021",
+      "cpu_address": "0x0011DE",
+      "source": "vector_longword_candidate",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0022",
+      "cpu_address": "0x0012D0",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0023",
+      "cpu_address": "0x0012E8",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0024",
+      "cpu_address": "0x00130C",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0025",
+      "cpu_address": "0x001708",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0026",
+      "cpu_address": "0x00331C",
+      "source": "prior_hbmame_debug_disassembly",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [
+        "continue-counter: investigative lead only"
+      ],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0027",
+      "cpu_address": "0x025C40",
+      "source": "prior_hbmame_debug_disassembly",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [
+        "continue-counter: investigative lead only"
+      ],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0028",
+      "cpu_address": "0x025CC0",
+      "source": "prior_hbmame_debug_disassembly",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [
+        "continue-counter: investigative lead only"
+      ],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0029",
+      "cpu_address": "0x025CDC",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0030",
+      "cpu_address": "0x025D06",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0031",
+      "cpu_address": "0x025D16",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0032",
+      "cpu_address": "0x025D30",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0033",
+      "cpu_address": "0x025D3C",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0034",
+      "cpu_address": "0x025D48",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0035",
+      "cpu_address": "0x025D54",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0036",
+      "cpu_address": "0x025D60",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0037",
+      "cpu_address": "0x025D6C",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0038",
+      "cpu_address": "0x025D78",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0039",
+      "cpu_address": "0x025D84",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0040",
+      "cpu_address": "0x025D96",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0041",
+      "cpu_address": "0x025DA6",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0042",
+      "cpu_address": "0x025DB6",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0043",
+      "cpu_address": "0x025DC6",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0044",
+      "cpu_address": "0x025DE0",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0045",
+      "cpu_address": "0x025DF0",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0046",
+      "cpu_address": "0x025E14",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0047",
+      "cpu_address": "0x025E72",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0048",
+      "cpu_address": "0x026438",
+      "source": "prior_hbmame_debug_disassembly",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [
+        "continue-screen sprite artifact: investigative lead only"
+      ],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0049",
+      "cpu_address": "0x0265A0",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0050",
+      "cpu_address": "0x0265CE",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0051",
+      "cpu_address": "0x0265FC",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0052",
+      "cpu_address": "0x0267BE",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0053",
+      "cpu_address": "0x0267E6",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0054",
+      "cpu_address": "0x02680E",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0055",
+      "cpu_address": "0x026A66",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0056",
+      "cpu_address": "0x026B02",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0057",
+      "cpu_address": "0x027388",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0058",
+      "cpu_address": "0x0275F0",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_CAND_0059",
+      "cpu_address": "0x027630",
+      "source": "static_direct_call_target",
+      "status": "UNVERIFIED_STATIC_ENTRY_CANDIDATE",
+      "linked_community_todos": [],
+      "runtime_confirmed": false,
+      "function_bounds_confirmed": false
+    }
+  ]
+}
