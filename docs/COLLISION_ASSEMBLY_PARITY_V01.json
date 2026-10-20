@@ -1,0 +1,15 @@
+{
+  "schema": "sfz3mix.assembly_parity.v01",
+  "cpu_start": 180634,
+  "cpu_end_exclusive": 180706,
+  "source_rom_sha256": "b5f7a1598e4f91a5113c506505b482b2cd1a19e366fe31471740e45dbd204691",
+  "assembly_source": "tools/collision_leaf_02c19a_v01.s",
+  "assembler": "GNU m68k-linux-gnu-as 2.38 -m68000",
+  "source_assembly_sha256": "c9e9bd5c0526032a8eec09d5e93bca0a533a07be2e64815229bbd02f0c0b0c90",
+  "expected_size": 72,
+  "assembled_size": 72,
+  "expected_original_bytes_sha256": "b1950ddb837bf0036268744f336ad6dff445dde6c7de5cfb2920d2c933b6178e",
+  "assembled_bytes_sha256": "b1950ddb837bf0036268744f336ad6dff445dde6c7de5cfb2920d2c933b6178e",
+  "mismatch_cpu_addresses": [],
+  "decision": "PASS"
+}
