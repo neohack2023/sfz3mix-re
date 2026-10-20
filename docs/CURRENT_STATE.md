@@ -14,7 +14,7 @@ Use the existing extracted ROM files on Host 02 directly. Verify CPU program `sz
 - 32 sampled HBMAME program-data reads match original CPU member offsets, **not proven opcode-fetch mapping**.
 - Capstone CFG: 839 *candidate* instructions, 414 edges, 59 *unverified* entrypoints.
 - GNU M68000 assembler reassembled one genuine 26-byte code fragment exactly; clean archive reconstruction preserved all eight members. **No patch accepted.**
-- Host 02 workspace: `D:\AIOS_SFZ3MIX_V032`. Last D: free-space check approximately 96 MiB. Verify available space before further work.
+- Host 02 workspace: `D:\AIOS_SFZ3MIX_V032`. Previous D: free-space check approximately 96 MiB; latest check 2026-10-20 returned **38 MiB**. Avoid new large local traces, snapshots or duplicate ROM copies until storage is reconciled. Verify available space before further work.
 
 ## Next execution target
 **Validate opcode-fetch mapping using bounded HBMAME instruction traces.** Compare decoded runtime instructions to original bytes and existing Capstone CFG; discover new runtime-backed entrypoints and indirect branches. Expand the function registry with evidence levels and link validated routines to the community TODO. Reassemble every newly verified assembly fragment byte-identically before proposing any change.
@@ -52,3 +52,6 @@ Function Database V01 passed the Host 02 SQLite build and address query tests: 5
 - Historical pointer+box-ID indexing resolved **20/20 active samples** to readable, plausible 8-byte dimension records within the hash-verified extracted v0.32 CPU program (**16 distinct addresses**). This corroborates stored data structure, not engine collision use.
 - SQLite function database contains 2 RAM structure pools, 28 slots, 14 fields, 88 observations, 2 hitbox-issue investigation links and 20 decoded box entries. Previous 59 function candidates and 76 call sites retained; **0 verified instruction-to-RAM/function xrefs**.
 - Next gate: bounded read-only instruction/memory access trace at 0xFF8490, 0xFF849C, 0xFF8890, 0xFF889C and corresponding ROM record addresses during real attacks; only after verified PC and function ownership should xrefs be promoted.
+
+## Latest validation and storage warning
+Last runtime audit (2026-10-20) reconfirmed extracted CPU member SHA-256 `b5f7a1598e4f91a5113c506505b482b2cd1a19e366fe31471740e45dbd204691`, five new Python scripts pass syntax checks, and the upgraded SQLite database passes `PRAGMA integrity_check` with 59 functions, 76 calls, 28 RAM slots, 88 observations, 20 box decodes, and 0 function-RAM xrefs. **D: free space was only 39,845,888 bytes (~38 MiB).** Cause of the additional reduction was not established; investigate before any further bulk capture.
