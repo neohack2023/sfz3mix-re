@@ -35,3 +35,20 @@ Build refuses to overwrite an existing database. Produce a new version or reconc
 
 ## Runtime SFA3 RAM profile extension (2026-10-20)
 [Runtime report](SFA3_RAM_COMPATIBILITY_V01.md) and [machine-readable profile](SFA3_RAM_PROFILE_V01.json) record dynamic player structures and verified 8-byte box-table-shaped data. Host 02 database additively includes `ram_structures`, `ram_slots`, `ram_fields`, `ram_observations`, `ram_issue_links`, `ram_box_decodes`, and empty `function_ram_xrefs`. Integrity and FK checks passed. Existing function/call records preserved. Do **not** populate xrefs merely from a RAM address or from data table decoding: record the actual 68000 instruction and confirmed function ownership first.
+
+## Collision reconstruction extension (2026-10-20)
+[Validated reconstruction](COLLISION_RECOVERY_V01.md) adds FUNC_REC_02C19A at CPU/file offset 0x02C19A, end-exclusive 0x02C1E2. This is an entry-bounded callable region with a shared wrapper tail; ownership is not asserted exclusive. All original 59 candidate rows and 76 call rows remain unchanged.
+
+Additive tables:
+- `function_basic_blocks`: seven blocks with exclusive end addresses and evidence.
+- `function_instructions`: 26 instruction memberships, sizes, mnemonic text, runtime visitation and mapping status; no machine-code bytes.
+- `function_cfg_edges`: direct conditional/fallthrough relationships, separately marking runtime-observed transitions.
+- `function_reconstructions`: assembly source, parity receipt, hashes, bounds and limitations.
+- `function_operand_accesses`: 44 local CPU operand observations; 16-bit bus masks preserve byte/word distinctions.
+- `function_data_xrefs`: four proven record-field readers for two data records.
+
+Existing `functions`, `calls`, `evidence`, `function_evidence`, `function_issues`, `ram_fields`, `function_ram_xrefs` and prior runtime instruction records are extended/reconciled. Totals: 60 functions, 79 calls, eight function-RAM xrefs. The first two original collision instruction sites now point to the recovered region; seven remain null. The `hitboxes` link is investigative, not a fix. Four added RAM fields document +0 active marker, +0x38 opponent word, +0x2C9 orientation condition and +0x21C output; visual semantics remain bounded.
+
+Migration: [ingest_collision_reconstruction_v01.py](../tools/ingest_collision_reconstruction_v01.py). It requires the locally verified reconstruction and preserved traces, backs up via SQLite API, uses one transaction, checks original-row preservation and runs integrity/FK checks before/after commit. It refuses repeat ingestion. The original V01 builder is the historical seed importer and does not rebuild all runtime extension tables; do not overwrite the existing database.
+
+Search the recovered function with the existing query command, using `--term 0x02C19A`. Join `function_instructions` on `cpu_pc=0x02C1AC` to resolve its entry-bounded owner. Join `function_data_xrefs` to `ram_box_decodes` by `record_address=entry_address` when comparing earlier sampled records; absence in an old snapshot is not absence of a live read.
