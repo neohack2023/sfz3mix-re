@@ -3,7 +3,7 @@
   "cpu_program_sha256": "b5f7a1598e4f91a5113c506505b482b2cd1a19e366fe31471740e45dbd204691",
   "source_archive_sha256": "867b8356872a034ec7e06f776bf757ec2095fee7616931b71f720f30369806ab",
   "derived_from": "Host 02 m68k_cfg_v02.json",
-  "disclaimer": "Entrypoint candidates only: no verified function meanings, boundaries, or instruction-fetch parity",
+  "disclaimer": "Mixed evidence registry: preserve STATIC_CANDIDATE classifications for the original 59 entries; only explicit reconstruction receipts validate recovered regions. No whole-ROM or gameplay fix claim.",
   "summary": {
     "cpu_bytes": 6291456,
     "static_candidate_instruction_count": 839,
@@ -17,7 +17,9 @@
     "queue_entries_remaining": 0,
     "instruction_budget": 25000,
     "budget_hit": false,
-    "classification_semantics": "static candidates, not proof of code/data or executed instructions"
+    "classification_semantics": "static candidates, not proof of code/data or executed instructions",
+    "total_function_entry_count": 60,
+    "recovered_callable_region_count": 1
   },
   "entries": [
     {
@@ -558,6 +560,24 @@
       "linked_community_todos": [],
       "runtime_confirmed": false,
       "function_bounds_confirmed": false
+    },
+    {
+      "id": "FUNC_REC_02C19A",
+      "cpu_address": "0x02C19A",
+      "cpu_end_exclusive": "0x02C1E2",
+      "source": "HBMAME entry/RTS/return plus direct BSR and byte-exact authored assembly",
+      "status": "RUNTIME_CALLABLE_ENTRY_CFG_AND_ASSEMBLY_PARITY_VERIFIED",
+      "linked_community_todos": [
+        "hitboxes: verified data reader, investigation not fix"
+      ],
+      "runtime_confirmed": true,
+      "function_bounds_confirmed": true,
+      "confidence": "HIGH_FOR_BOUNDED_CALLABLE_REGION",
+      "file_member": "sz3mx.03",
+      "file_offset": 180634,
+      "mapping_status": "EXACT_RECOVERED_REGION_OPCODE_FILE_PARITY",
+      "reconstruction": "docs/COLLISION_RECONSTRUCTION_V01.json",
+      "ownership_limit": "entry-bounded region, not exclusive ownership; all external/indirect incoming paths not enumerated"
     }
   ]
 }
