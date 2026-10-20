@@ -11,7 +11,7 @@ Use this directory of links to find verified results, unresolved leads, and reus
 | What bytes and archives were verified? | [Whole-program V01](WHOLE_PROGRAM_V01.md) | Complete byte accounting, not code recognition |
 | What is known about address mappings? | [32 sampled matches](PROGRAM_MAPPING_SAMPLES_V02.json) | Data-space samples only |
 | How far is instruction recovery? | [Instruction recovery V01](INSTRUCTION_RECOVERY_V01.md) | Bounded CFG, assembly parity for 26 bytes |
-| What functions are known? | [Function registry](FUNCTION_REGISTRY_V01.json) | 59 unverified entries |
+| What functions are known? | [Function registry](FUNCTION_REGISTRY_V01.json) | 59 original candidates plus verified shared callable regions |
 | What older addresses may matter? | [Function leads](FUNCTION_LEADS_V01.json) | Hypotheses, not proven roles |
 
 ## Canonical artifact and workflow
@@ -57,3 +57,10 @@ Keep [CURRENT_STATE](CURRENT_STATE.md) short and updated. Add dated receipts for
 - [Machine-readable reconstruction](COLLISION_RECONSTRUCTION_V01.json) and [72-byte assembly parity receipt](COLLISION_ASSEMBLY_PARITY_V01.json).
 - [Editable GNU assembly](../tools/collision_leaf_02c19a_v01.s), [assembler command](../tools/collision_assembly_v01.sh), [bounded probe](../tools/collision_recovery_v02.lua), [runner](../tools/run_collision_recovery_v02.py), [verifier](../tools/verify_collision_reconstruction_v01.py), [transactional DB migration](../tools/ingest_collision_reconstruction_v01.py).
 - Current registry: 59 original static candidates plus one verified entry-bounded callable region. Earlier zero-owner/zero-xref checkpoints remain historical evidence.
+
+## Collision Engine Recovery V02
+- [Engineering receipt, failures and next target](COLLISION_ENGINE_RECOVERY_V02.md).
+- [Machine-readable wrapper, seven site assessments, runtime dependencies and three parity receipts](COLLISION_ENGINE_RECOVERY_V02.json).
+- [Wrapper prefix](../tools/collision_wrapper_02c17e_v02.s), [dual-record block](../tools/collision_dual_records_029a42_v02.s), [selector-update block](../tools/collision_selectors_02f666_v02.s).
+- [Bounded probe](../tools/collision_engine_v02.lua), [runner](../tools/run_collision_engine_v02.py), [verifier/assembler](../tools/verify_collision_engine_v02.py), [transactional migration](../tools/ingest_collision_engine_v02.py).
+- SQLite:61 functions/80 calls; explicit shared blocks; unresolved function owners retained. +21C consumer search was bounded-negative. Recheck154MiB free storage before captures.
