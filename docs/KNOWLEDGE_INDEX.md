@@ -51,3 +51,9 @@ Keep [CURRENT_STATE](CURRENT_STATE.md) short and updated. Add dated receipts for
 ## Approved registration and runtime collision instruction accesses
 - [Authority recovery receipt with successful continuation](AUTHORITY_RECOVERY_2026-10-20.md): Drive row 24 and Host 02 binding verified; canonical preflight PASS. Fifty access samples / nine exact instruction sites; function ownership unresolved.
 - [Bounded read-only HBMAME probe](../tools/collision_access_v01.lua) and [additive SQLite ingestion](../tools/ingest_collision_access_v01.py): 74 RAM-field links, existing records preserved, integrity/FKs PASS. Raw output remains local. Preserve fixed output files before a repeat.
+
+## Verified collision callable-region reconstruction
+- [Recovery and local validation receipt](COLLISION_RECOVERY_V01.md): FUNC_REC_02C19A, 26 instructions / seven blocks, runtime pointer-selector-record reads and bounded ownership limits.
+- [Machine-readable reconstruction](COLLISION_RECONSTRUCTION_V01.json) and [72-byte assembly parity receipt](COLLISION_ASSEMBLY_PARITY_V01.json).
+- [Editable GNU assembly](../tools/collision_leaf_02c19a_v01.s), [assembler command](../tools/collision_assembly_v01.sh), [bounded probe](../tools/collision_recovery_v02.lua), [runner](../tools/run_collision_recovery_v02.py), [verifier](../tools/verify_collision_reconstruction_v01.py), [transactional DB migration](../tools/ingest_collision_reconstruction_v01.py).
+- Current registry: 59 original static candidates plus one verified entry-bounded callable region. Earlier zero-owner/zero-xref checkpoints remain historical evidence.
