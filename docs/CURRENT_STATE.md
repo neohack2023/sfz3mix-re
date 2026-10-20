@@ -4,8 +4,11 @@ Updated: 2026-10-20. This is the living status document; see [knowledge index](K
 ## Mission
 Produce reversible patches for **SFZ3 Mix v0.32 as an FBNeo-compatible CPS2 ROM**, preserving the user's community [TODO list](../TODO.md). Do not make a recompilation or clone the existing workspace.
 
+## Working input policy
+Use the existing extracted ROM files on Host 02 directly. Verify CPU program `sz3mx.03` SHA-256 `b5f7a1598e4f91a5113c506505b482b2cd1a19e366fe31471740e45dbd204691` before analysis; currently indexed local candidate path is `D:\AIOS_SFZ3MIX_V032\tools\sz3mx.03`, which must be checked before adoption. **No ZIP extraction/repack step is required for function discovery or source reassembly.** Distribution-archive mapping is historical and optional for emulator packaging.
+
 ## Confirmed accomplishments
-- Original ZIP hash: `867b8356872a034ec7e06f776bf757ec2095fee7616931b71f720f30369806ab`. Original has eight entries, HBMAME mapping uses six.
+- Historical ZIP provenance hash (not the central working artifact): `867b8356872a034ec7e06f776bf757ec2095fee7616931b71f720f30369806ab`. Original has eight entries, HBMAME mapping uses six.
 - HBMAME 0.289.3 reproduces the score changing from 0 to 1 after continuing; root cause unresolved.
 - Byte-level accounting covers 6 MiB CPU member, but is **not** whole-ROM disassembly.
 - 32 sampled HBMAME program-data reads match original CPU member offsets, **not proven opcode-fetch mapping**.
@@ -17,7 +20,7 @@ Produce reversible patches for **SFZ3 Mix v0.32 as an FBNeo-compatible CPS2 ROM*
 **Validate opcode-fetch mapping using bounded HBMAME instruction traces.** Compare decoded runtime instructions to original bytes and existing Capstone CFG; discover new runtime-backed entrypoints and indirect branches. Expand the function registry with evidence levels and link validated routines to the community TODO. Reassemble every newly verified assembly fragment byte-identically before proposing any change.
 
 ## Gates
-1. Original hash and free space confirmed.
+1. Existing extracted ROM component hashes and free space confirmed.
 2. Before/after measurements and trace recorded with CPU and file address space identified.
 3. New functions annotated with caller/callee, instructions, confidence, and proof.
 4. No original ROM overwritten; no bulk duplicate archive.
