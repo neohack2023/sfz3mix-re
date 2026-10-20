@@ -1,0 +1,495 @@
+{
+  "schema": "sfz3mix.collision_engine_recovery.v02",
+  "source_rom_sha256": "b5f7a1598e4f91a5113c506505b482b2cd1a19e366fe31471740e45dbd204691",
+  "preflight": "READY_CONTINUE",
+  "wrapper": {
+    "id": "FUNC_REC_02C17E",
+    "entry": 180606,
+    "prefix_end": 180634,
+    "end_exclusive": 180706,
+    "classification": "RUNTIME_CALLABLE_WRAPPER_WITH_SHARED_LEAF_TAIL",
+    "incoming_call_site": 180350,
+    "caller_function_id": null,
+    "return_pc": 180354,
+    "subcalls": [
+      180610,
+      180618,
+      180626
+    ],
+    "shared_function_id": "FUNC_REC_02C19A",
+    "runtime_receiver_slots": [
+      16745472,
+      16746496,
+      16747520,
+      16748544
+    ],
+    "shared_blocks": "all seven existing FUNC_REC_02C19A blocks",
+    "stack": "BSR/RTS architectural -4/+4; debugger SP snapshots unchanged and excluded from stack ABI proof",
+    "clobbers": [
+      "A6",
+      "A0",
+      "A4",
+      "D0",
+      "D1",
+      "D2 low byte",
+      "CCR"
+    ],
+    "preserves_by_body": [
+      "A5"
+    ],
+    "instruction_trace_count": 67
+  },
+  "capture": {
+    "rows": 180,
+    "frames": [
+      2939,
+      2946
+    ],
+    "phase": "EXISTING_DETERMINISTIC_GAMEPLAY_INPUTS",
+    "cap": 512,
+    "field_21c_writes": 20,
+    "field_21c_reads": 0,
+    "decision": "BOUNDED_NEGATIVE_CONSUMER_RESULT",
+    "trace_sha256": "e02c8ab5a5ceb3edcc9fdff2f159ff0ae81c806359907323d7cbf4846bc8f0bf",
+    "instruction_trace_sha256": "2f3378249b1ecc9c0386e822f93e39b7a377e51a5e73381ed611ba6220d467cf",
+    "launch_elapsed_seconds": 58.4862363000866
+  },
+  "record_reads": [
+    {
+      "pc": 170582,
+      "address": 878034,
+      "value": 6,
+      "kind": "READ",
+      "width": 2,
+      "record": 878032,
+      "offset": 2
+    },
+    {
+      "pc": 170590,
+      "address": 994020,
+      "value": 59,
+      "kind": "READ",
+      "width": 2,
+      "record": 994018,
+      "offset": 2
+    },
+    {
+      "pc": 170608,
+      "address": 878038,
+      "value": 6,
+      "kind": "READ",
+      "width": 2,
+      "record": 878032,
+      "offset": 6
+    },
+    {
+      "pc": 170612,
+      "address": 994024,
+      "value": 26,
+      "kind": "READ",
+      "width": 2,
+      "record": 994018,
+      "offset": 6
+    }
+  ],
+  "reader_sites": [
+    {
+      "pc": 170512,
+      "region_start": 170512,
+      "region_end_exclusive": 170520,
+      "function_id": null,
+      "ownership": "UNRESOLVED",
+      "confidence": "RUNTIME_INSTRUCTION_PROVEN_BLOCK_STATIC",
+      "meaning": "+CB selector of A6; zero exits to 029B3E",
+      "instructions": [
+        {
+          "pc": 170512,
+          "size": 4,
+          "instruction": "move.b  ($cb,A6), D0"
+        },
+        {
+          "pc": 170516,
+          "size": 4,
+          "instruction": "beq     $29b3e"
+        }
+      ],
+      "runtime_reobserved": true
+    },
+    {
+      "pc": 170522,
+      "region_start": 170520,
+      "region_end_exclusive": 170530,
+      "function_id": null,
+      "ownership": "UNRESOLVED",
+      "confidence": "RUNTIME_INSTRUCTION_PROVEN_BLOCK_STATIC",
+      "meaning": "+CB selector of A4; zero exits to 029B3E",
+      "instructions": [
+        {
+          "pc": 170520,
+          "size": 2,
+          "instruction": "moveq   #$0, D1"
+        },
+        {
+          "pc": 170522,
+          "size": 4,
+          "instruction": "move.b  ($cb,A4), D1"
+        },
+        {
+          "pc": 170526,
+          "size": 4,
+          "instruction": "beq     $29b3e"
+        }
+      ],
+      "runtime_reobserved": true
+    },
+    {
+      "pc": 170562,
+      "region_start": 170562,
+      "region_end_exclusive": 170602,
+      "function_id": null,
+      "ownership": "UNRESOLVED",
+      "confidence": "RUNTIME_INSTRUCTION_PROVEN_BLOCK_STATIC",
+      "meaning": "A6+9C pointer; D0<<3; vertical record+2 read",
+      "instructions": [
+        {
+          "pc": 170562,
+          "size": 4,
+          "instruction": "movea.l ($9c,A6), A0"
+        },
+        {
+          "pc": 170566,
+          "size": 4,
+          "instruction": "movea.l ($9c,A4), A1"
+        },
+        {
+          "pc": 170570,
+          "size": 2,
+          "instruction": "lsl.w   #3, D0"
+        },
+        {
+          "pc": 170572,
+          "size": 2,
+          "instruction": "lsl.w   #3, D1"
+        },
+        {
+          "pc": 170574,
+          "size": 4,
+          "instruction": "lea     (A0,D0.w), A0"
+        },
+        {
+          "pc": 170578,
+          "size": 4,
+          "instruction": "lea     (A1,D1.w), A1"
+        },
+        {
+          "pc": 170582,
+          "size": 4,
+          "instruction": "move.w  ($2,A0), D0"
+        },
+        {
+          "pc": 170586,
+          "size": 4,
+          "instruction": "add.w   ($14,A6), D0"
+        },
+        {
+          "pc": 170590,
+          "size": 4,
+          "instruction": "move.w  ($2,A1), D1"
+        },
+        {
+          "pc": 170594,
+          "size": 4,
+          "instruction": "add.w   ($14,A4), D1"
+        },
+        {
+          "pc": 170598,
+          "size": 2,
+          "instruction": "moveq   #$0, D2"
+        },
+        {
+          "pc": 170600,
+          "size": 2,
+          "instruction": "sub.w   D0, D1"
+        }
+      ],
+      "runtime_reobserved": true
+    },
+    {
+      "pc": 170566,
+      "region_start": 170562,
+      "region_end_exclusive": 170602,
+      "function_id": null,
+      "ownership": "UNRESOLVED",
+      "confidence": "RUNTIME_INSTRUCTION_PROVEN_BLOCK_STATIC",
+      "meaning": "A4+9C pointer; D1<<3; vertical record+2 read",
+      "instructions": [
+        {
+          "pc": 170562,
+          "size": 4,
+          "instruction": "movea.l ($9c,A6), A0"
+        },
+        {
+          "pc": 170566,
+          "size": 4,
+          "instruction": "movea.l ($9c,A4), A1"
+        },
+        {
+          "pc": 170570,
+          "size": 2,
+          "instruction": "lsl.w   #3, D0"
+        },
+        {
+          "pc": 170572,
+          "size": 2,
+          "instruction": "lsl.w   #3, D1"
+        },
+        {
+          "pc": 170574,
+          "size": 4,
+          "instruction": "lea     (A0,D0.w), A0"
+        },
+        {
+          "pc": 170578,
+          "size": 4,
+          "instruction": "lea     (A1,D1.w), A1"
+        },
+        {
+          "pc": 170582,
+          "size": 4,
+          "instruction": "move.w  ($2,A0), D0"
+        },
+        {
+          "pc": 170586,
+          "size": 4,
+          "instruction": "add.w   ($14,A6), D0"
+        },
+        {
+          "pc": 170590,
+          "size": 4,
+          "instruction": "move.w  ($2,A1), D1"
+        },
+        {
+          "pc": 170594,
+          "size": 4,
+          "instruction": "add.w   ($14,A4), D1"
+        },
+        {
+          "pc": 170598,
+          "size": 2,
+          "instruction": "moveq   #$0, D2"
+        },
+        {
+          "pc": 170600,
+          "size": 2,
+          "instruction": "sub.w   D0, D1"
+        }
+      ],
+      "runtime_reobserved": true
+    },
+    {
+      "pc": 163546,
+      "region_start": 163546,
+      "region_end_exclusive": 163556,
+      "function_id": null,
+      "ownership": "UNRESOLVED",
+      "confidence": "RUNTIME_INSTRUCTION_PROVEN_BLOCK_STATIC",
+      "meaning": "A1+C8 longword -> A5-5CD6; zero branch 027FDA",
+      "instructions": [
+        {
+          "pc": 163546,
+          "size": 6,
+          "instruction": "move.l  ($c8,A1), (-$5cd6,A5)"
+        },
+        {
+          "pc": 163552,
+          "size": 4,
+          "instruction": "beq     $27fda"
+        }
+      ],
+      "runtime_reobserved": false
+    },
+    {
+      "pc": 163568,
+      "region_start": 163562,
+      "region_end_exclusive": 163580,
+      "function_id": null,
+      "ownership": "UNRESOLVED",
+      "confidence": "RUNTIME_INSTRUCTION_PROVEN_BLOCK_STATIC",
+      "meaning": "A1+90 + selector*8 -> A2; direct BSR 0296A6; caller ownership unresolved",
+      "instructions": [
+        {
+          "pc": 163562,
+          "size": 4,
+          "instruction": "andi.w  #$ff, D0"
+        },
+        {
+          "pc": 163566,
+          "size": 2,
+          "instruction": "lsl.w   #3, D0"
+        },
+        {
+          "pc": 163568,
+          "size": 4,
+          "instruction": "movea.l ($90,A1), A2"
+        },
+        {
+          "pc": 163572,
+          "size": 4,
+          "instruction": "lea     (A2,D0.w), A2"
+        },
+        {
+          "pc": 163576,
+          "size": 4,
+          "instruction": "bsr     $296a6"
+        }
+      ],
+      "runtime_reobserved": false
+    },
+    {
+      "pc": 194150,
+      "region_start": 194150,
+      "region_end_exclusive": 194188,
+      "function_id": null,
+      "ownership": "UNRESOLVED",
+      "confidence": "RUNTIME_INSTRUCTION_PROVEN_BLOCK_STATIC",
+      "meaning": "longword source(A0) -> A6+C8..CB; selector writer",
+      "instructions": [
+        {
+          "pc": 194150,
+          "size": 4,
+          "instruction": "move.l  (A0), ($c8,A6)"
+        },
+        {
+          "pc": 194154,
+          "size": 2,
+          "instruction": "moveq   #$0, D0"
+        },
+        {
+          "pc": 194156,
+          "size": 4,
+          "instruction": "movea.l ($1c,A6), A0"
+        },
+        {
+          "pc": 194160,
+          "size": 4,
+          "instruction": "move.b  ($a,A0), D0"
+        },
+        {
+          "pc": 194164,
+          "size": 2,
+          "instruction": "lsl.w   #2, D0"
+        },
+        {
+          "pc": 194166,
+          "size": 4,
+          "instruction": "movea.l ($c0,A6), A0"
+        },
+        {
+          "pc": 194170,
+          "size": 6,
+          "instruction": "move.l  (A0,D0.w), ($c4,A6)"
+        },
+        {
+          "pc": 194176,
+          "size": 6,
+          "instruction": "move.b  ($c6,A6), ($3d,A6)"
+        },
+        {
+          "pc": 194182,
+          "size": 2,
+          "instruction": "moveq   #$0, D0"
+        },
+        {
+          "pc": 194184,
+          "size": 4,
+          "instruction": "move.b  ($c6,A6), D0"
+        }
+      ],
+      "runtime_reobserved": false
+    }
+  ],
+  "assembly": [
+    {
+      "source": "tools/collision_wrapper_02c17e_v02.s",
+      "start": 180606,
+      "end_exclusive": 180634,
+      "source_sha256": "67e784a3abcbd97519091fc093b001101b8ea2a0c577d1f8f48a5dca1aef1c1b",
+      "expected_sha256": "5d0ce2f11294b0710fc2b22612b51acf35d04645b29f4c7dbd68536b435eb1b0",
+      "assembled_sha256": "5d0ce2f11294b0710fc2b22612b51acf35d04645b29f4c7dbd68536b435eb1b0",
+      "size": 28,
+      "mismatch_addresses": [],
+      "decision": "PASS"
+    },
+    {
+      "source": "tools/collision_dual_records_029a42_v02.s",
+      "start": 170562,
+      "end_exclusive": 170598,
+      "source_sha256": "384b6b246d2bca808a9bf8ca385b7a73a268a20040342774ffe8bc24d3470639",
+      "expected_sha256": "ffb75a6805359b6bad410a6e25280af40d012aaf66f5ff412b38bd01c67aac1b",
+      "assembled_sha256": "ffb75a6805359b6bad410a6e25280af40d012aaf66f5ff412b38bd01c67aac1b",
+      "size": 36,
+      "mismatch_addresses": [],
+      "decision": "PASS"
+    },
+    {
+      "source": "tools/collision_selectors_02f666_v02.s",
+      "start": 194150,
+      "end_exclusive": 194188,
+      "source_sha256": "8c23644068a78776884e642647b09044cd4ee9665964d271898955c8efa17788",
+      "expected_sha256": "e5f92cf4185897b3a4bda2889a308948b4c01492d2836fd7ebf475f444197415",
+      "assembled_sha256": "e5f92cf4185897b3a4bda2889a308948b4c01492d2836fd7ebf475f444197415",
+      "size": 38,
+      "mismatch_addresses": [],
+      "decision": "PASS"
+    }
+  ],
+  "wrapper_instructions": [
+    {
+      "pc": 180606,
+      "size": 4,
+      "instruction": "lea     ($400,A5), A6"
+    },
+    {
+      "pc": 180610,
+      "size": 4,
+      "instruction": "bsr     $2c19a"
+    },
+    {
+      "pc": 180614,
+      "size": 4,
+      "instruction": "lea     ($800,A5), A6"
+    },
+    {
+      "pc": 180618,
+      "size": 4,
+      "instruction": "bsr     $2c19a"
+    },
+    {
+      "pc": 180622,
+      "size": 4,
+      "instruction": "lea     ($c00,A5), A6"
+    },
+    {
+      "pc": 180626,
+      "size": 4,
+      "instruction": "bsr     $2c19a"
+    },
+    {
+      "pc": 180630,
+      "size": 4,
+      "instruction": "lea     ($1000,A5), A6"
+    }
+  ],
+  "limits": [
+    "Debugger disassembly length A6 initially resolved as register; oversized local export preserved; verifier stops at explicit range; probe fixed to 0x numeric expressions",
+    "All external/indirect entries not enumerated",
+    "No +21C read observed in eight frames; consumer purpose unresolved",
+    "Two-player vertical non-overlap checks observed; horizontal overlap/correction path not runtime established",
+    "Inactive receiver slots exercised; zero selector not observed",
+    "No gameplay modification; hitboxes issue remains open",
+    "Frame_done interval numbering retained; two logical updates can occur in an interval",
+    "Bus longwords logged as two 16-bit transfers; byte masks retain lane identity"
+  ],
+  "next_target": "Locate a scenario/static candidate reading +21C; establish callable entry for 029A10 chain and observe overlap-positive path",
+  "final_free_bytes": 167772160
+}
