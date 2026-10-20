@@ -1,0 +1,26 @@
+# Do not commit source or rebuilt ROM containers, keys, ROM members, or emulator binaries.
+*.zip
+*.7z
+*.rar
+*.chd
+*.cue
+*.iso
+*.sta
+*.key
+*.03
+*.13m
+*.21m
+*.01
+*.11m
+*.bin
+*.exe
+*.dll
+*.sav
+*.nv
+__pycache__/
+*.pyc
+# Local evidence is referenced by sanitized reports in docs, not copied wholesale.
+local-evidence/
+artifacts/
+runtime/
+runtime_hbmame/
