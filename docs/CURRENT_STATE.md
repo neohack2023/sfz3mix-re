@@ -5,7 +5,7 @@ Updated: 2026-10-20. This is the living status document; see [knowledge index](K
 Produce reversible patches for **SFZ3 Mix v0.32 as an FBNeo-compatible CPS2 ROM**, preserving the user's community [TODO list](../TODO.md). Do not make a recompilation or clone the existing workspace.
 
 ## Working input policy
-Use the existing extracted ROM files on Host 02 directly. Verify CPU program `sz3mx.03` SHA-256 `b5f7a1598e4f91a5113c506505b482b2cd1a19e366fe31471740e45dbd204691` before analysis; currently indexed local candidate path is `D:\AIOS_SFZ3MIX_V032\tools\sz3mx.03`, which must be checked before adoption. **No ZIP extraction/repack step is required for function discovery or source reassembly.** Distribution-archive mapping is historical and optional for emulator packaging.
+Use the existing extracted ROM files on Host 02 directly. Verify CPU program `sz3mx.03` SHA-256 `b5f7a1598e4f91a5113c506505b482b2cd1a19e366fe31471740e45dbd204691` before analysis; currently indexed local candidate path is `D:\AIOS_SFZ3MIX_V032\tools\sz3mx.03`, which was hash-verified on Host 02 (2026-10-20). Recheck before future changes. **No ZIP extraction/repack step is required for function discovery or source reassembly.** Distribution-archive mapping is historical and optional for emulator packaging.
 
 ## Confirmed accomplishments
 - Historical ZIP provenance hash (not the central working artifact): `867b8356872a034ec7e06f776bf757ec2095fee7616931b71f720f30369806ab`. Original has eight entries, HBMAME mapping uses six.
