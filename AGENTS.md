@@ -4,7 +4,7 @@ Start with [current state](docs/CURRENT_STATE.md), then the [community TODO](TOD
 
 **Goal:** Patch the original SFZ3 Mix v0.32 CPS2 ROM for FBNeo/HBMAME. Do not create a recompilation or another project clone.
 
-**Sources of truth:** GitHub main stores tested tools and sanitized research; Host 02 at `D:\AIOS_SFZ3MIX_V032` stores original ROM and runtime evidence; Google Drive's AIOS scope registry governs formally registered scopes. A dedicated SFZ3 scope has not yet been confirmed.
+**Sources of truth:** GitHub main stores tested tools and sanitized research; Host 02 at `D:\AIOS_SFZ3MIX_V032` stores original ROM and runtime evidence; Google Drive's AIOS scope registry governs formally registered scopes. Canonical scope `github:neohack2023/sfz3mix-re` is registered in Drive (REGISTRY row 24); Host 02 workspace token `sfz3mix-v032` binds the existing workspace. Registration does not replace per-command preflight or evidence gates.
 
 **Canonical input rule:** The already-extracted ROM components, especially the verified CPU program `sz3mx.03`, are the center of reverse engineering, assembly editing, and patch validation. Resolve their existing paths and verify member hashes before use. **Do not unzip, re-extract, or rebuild the distribution ZIP as a prerequisite to work on the ROM.** Retain old ZIP-based receipts for historical provenance; handle an emulator ZIP only when required for a specific launch or release test.
 
