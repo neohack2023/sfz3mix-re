@@ -20,3 +20,9 @@ Other requested targets include continue-screen graphics, Karin slide, Alpha Cou
 
 ## Repository policy
 Only commit **tools, source, patch deltas, scripts, docs, manifests and suitably reviewed evidence**. Do not commit game ROMs, firmware, redistributed game assets, emulator binaries or large capture dumps. Keep the local working tree as the execution source until a tested, hash-verified transfer is complete.
+
+## Current recovery milestones
+- [V01 whole-program byte coverage and reversible ZIP-member roundtrip](docs/WHOLE_PROGRAM_V01.md) (validated, not a full disassembly).
+- [32 sampled ROM-data-to-emulator address matches](docs/PROGRAM_MAPPING_SAMPLES_V02.json) (opcode fetch mapping still unverified).
+- [Function/address leads registry](docs/FUNCTION_LEADS_V01.json) (hypotheses kept separate from verified recovered functions).
+- [Community patch backlog](TODO.md) (all gameplay fixes remain open).
