@@ -52,3 +52,31 @@ Existing `functions`, `calls`, `evidence`, `function_evidence`, `function_issues
 Migration: [ingest_collision_reconstruction_v01.py](../tools/ingest_collision_reconstruction_v01.py). It requires the locally verified reconstruction and preserved traces, backs up via SQLite API, uses one transaction, checks original-row preservation and runs integrity/FK checks before/after commit. It refuses repeat ingestion. The original V01 builder is the historical seed importer and does not rebuild all runtime extension tables; do not overwrite the existing database.
 
 Search the recovered function with the existing query command, using `--term 0x02C19A`. Join `function_instructions` on `cpu_pc=0x02C1AC` to resolve its entry-bounded owner. Join `function_data_xrefs` to `ram_box_decodes` by `record_address=entry_address` when comparing earlier sampled records; absence in an old snapshot is not absence of a live read.
+
+## Collision Engine Recovery V02 extension
+[Receipt](COLLISION_ENGINE_RECOVERY_V02.md), [registry/parity](COLLISION_ENGINE_RECOVERY_V02.json), [migration](../tools/ingest_collision_engine_v02.py).
+Existing DB now61 functions/80 calls. FUNC_REC_02C17E owns four prefix blocks/seven instructions and references the seven existing FUNC_REC_02C19A blocks through function_shared_blocks. Shared instructions are not duplicated.
+Three existing calls gain their proven wrapper caller; a new call at02C07E has unknown containing caller. All other previous rows are preserved.
+
+Additional tables:
+- function_shared_blocks: function→existing block membership with evidence.
+- function_control_relationships: direct calls and shared fallthrough, independently marking runtime proof.
+- function_contracts: register/stack evidence and limits.
+- collision_reader_assessments: seven proven sites with bounded block descriptions and null function owners.
+- runtime_collision_dependencies:180 CPU bus observations; masks retain byte/word/longword-transfer distinction.
+- collision_data_dependencies: four actual vertical record readers (+2/+6), owners unresolved.
+- assembly_region_reconstructions: three exact source-authored regions, hashes and evidence.
+
+Backup evidence/functions_v01_before_collision_engine_v02.sqlite passes integrity/FKs; transaction checks preserved rows and integrity/FKs before/after commit. Migration refuses replay.
+Twenty +21C writes and zero reads across intervals2939..2946 are a bounded negative consumer result. Never infer nonuse outside this scenario.
+
+```sql
+SELECT f.id,b.id,b.start_address,b.end_exclusive
+FROM function_shared_blocks s JOIN functions f ON f.id=s.function_id
+JOIN function_basic_blocks b ON b.id=s.block_id;
+SELECT cpu_pc,function_id,confidence FROM collision_reader_assessments;
+SELECT cpu_pc,kind,address,bus_data,bus_mask,frame
+FROM runtime_collision_dependencies WHERE address IN (0xFF861C,0xFF8A1C);
+SELECT * FROM collision_data_dependencies;
+```
+Historical builder/earlier row counts above describe earlier checkpoints. Do not rebuild over the extended DB.
