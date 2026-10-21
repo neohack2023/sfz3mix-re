@@ -2,6 +2,10 @@
 
 This repository tracks **incremental patches to the existing SFZ3 Mix v0.32 CPS2 ROM**, preserving the FBNeo/HBMAME ROM workflow. It is **not** a recompilation or replacement game project.
 
+## Pinned historical builds (cloud references)
+
+Older author-hosted SFZ3 Mix releases **0.13 and 0.23–0.31** are pinned in [the historical version catalog](docs/HISTORICAL_RELEASE_PINS_V01.md) and [machine-readable JSON registry](docs/HISTORICAL_RELEASE_PINS_V01.json). **Do not require all reference archives on Host 02**; retrieve only the version needed for a bounded comparison, verify bytes, and preserve sanitized findings. The v0.32 working ROM is unchanged.
+
 ## Start here: navigation for people and agents
 
 **New agent?** Read [AGENTS.md](AGENTS.md), then [current status and next action](docs/CURRENT_STATE.md), [community issue backlog](TODO.md), and [knowledge / evidence index](docs/KNOWLEDGE_INDEX.md). The detailed receipts below are retained as historical evidence, not separate competing handoffs.
