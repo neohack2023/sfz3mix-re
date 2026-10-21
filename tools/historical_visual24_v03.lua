@@ -22,7 +22,7 @@ emu.register_frame_done(function()
  if events[f]then press(events[f][1],events[f][2])end
  if edges[f]~=nil then press("P1 Button 1",edges[f]);press("P1 Button 4",edges[f])end
  if f==500 or f==1000 or f==2900 then
-  for _,s in pairs(manager.machine.screens)do s:snapshot("frame_"..f..".png");break end
+  for _,s in pairs(manager.machine.screens)do print("SNAP",f,s:snapshot("C:/AIOS/_TEMP/SFZ3MIX_V03_BOOT_VISUAL/frame_"..f..".png"));break end
  end
  if f==2900 then
   for _,b in ipairs({0xff8404,0xff8804})do
@@ -36,7 +36,7 @@ emu.register_frame_done(function()
   end
  end
  if f>=2900 and f%2==0 then snap("STATE")end
- if f>=3360 then
+ if f>=1002 then
   for _,t in ipairs(taps)do t:remove()end
   snap("COMPLETE");out:close();print("V03_COMPLETE "..f.." "..count);manager.machine:exit()
  end
