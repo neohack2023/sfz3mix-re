@@ -30,3 +30,7 @@ Need natural overlap of opponent active flag+A9 and eligible receiver before hit
 Do not force RAM or label a successful mechanic from static dataflow alone.
 Use existing evidence/functions_v01.sqlite and retained migration backups.
 [Knowledge index](KNOWLEDGE_INDEX.md), [DB guide](FUNCTION_DATABASE_V01.md), [community TODO](../TODO.md).
+
+## Historical reference pin (remote-only, 2026-10-21)
+Official v0.13 and v0.23–v0.31 archived releases are pinned as author-site URLs in [HISTORICAL_RELEASE_PINS_V01.md](HISTORICAL_RELEASE_PINS_V01.md) and [JSON](HISTORICAL_RELEASE_PINS_V01.json). Use them directly for documentation research, and fetch one archive temporarily only if byte-level comparisons require it. No new Host02 archive collection is necessary. Original v0.32 remains canonical. The earlier 0.01a build was not located; crouch-cancel removal implementation and community bug fixes remain unverified.
+
