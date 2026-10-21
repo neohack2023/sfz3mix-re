@@ -80,3 +80,21 @@ FROM runtime_collision_dependencies WHERE address IN (0xFF861C,0xFF8A1C);
 SELECT * FROM collision_data_dependencies;
 ```
 Historical builder/earlier row counts above describe earlier checkpoints. Do not rebuild over the extended DB.
+
+## Downstream consumer V03 extension
+[Receipt](COLLISION_CONSUMER_V03.md), [machine registry](COLLISION_CONSUMER_V03.json).
+61functions/80calls remain unchanged: REGION_037A56 is reader-anchored and has null function ownership.
+New tables collision_consumer_regions/instructions/blocks/edges/sites and collision_scenario_summaries retain14instructions,6blocks,10sites and five input-phase summaries.
+assembly_region_reconstructions gains44-byte exact parity; runtime_collision_dependencies gains187observations (147reads/40writes).
+All original rows remain exact; four successful prior assembly sources are hash-protected.
+Backup evidence/functions_v01_before_collision_consumer_v03.sqlite and DB pass integrity/FK checks.
+
+```sql
+SELECT * FROM collision_consumer_regions;
+SELECT cpu_pc,function_id,region_id FROM collision_consumer_sites;
+SELECT source_pc,target_pc,runtime_proven FROM collision_consumer_edges;
+SELECT cpu_pc,frame,address,bus_data FROM runtime_collision_dependencies
+WHERE evidence_id='collision-consumer-v03' AND kind='READ' ORDER BY id;
+```
+Input labels identify issued controls, not validated move names. Snapshot edge values precede a game write; bus_data is the new value. Prefetched IR at other callbacks is not their opcode proof.
+The near branch and the caller consuming D0 are unresolved. No hitbox issue is fixed.
