@@ -91,3 +91,7 @@ Keep [CURRENT_STATE](CURRENT_STATE.md) short and updated. Add dated receipts for
 ## Historical v0.23–v0.27 real ROM comparisons
 - [Verified archives, CPU SHA-256, adjacent byte/page deltas and action priorities](HISTORICAL_023_027_COMPARISON_V01.md). All five official releases processed in bounded C: scratch, no ROM binaries retained in GitHub. 0.24→0.25 roll-recovery and 0.25→0.26 grab-immunity are the best next code-level targets; raw byte deltas are **not** identified gameplay routines.
 - [Reproducible bounded comparator script](../tools/compare_historical_23_27_v01.py).
+
+## Historical 68000 eligibility / roll comparison V02
+- [Read-only Capstone candidate scan and exact historical pointer relocation evidence](HISTORICAL_ROLL_ELIGIBILITY_V02.md). Verified v0.24/25/26 downloads and CPU hashes, candidate sequences and strong offset drift. **No roll-recovery/grab-immunity function or community fix yet verified**.
+- [Reproducible bounded scan](../tools/historical_m68k_candidates_024_026_v01.py). Next gate is runtime control trace tied to named inputs and state transitions.
