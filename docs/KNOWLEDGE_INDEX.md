@@ -95,3 +95,8 @@ Keep [CURRENT_STATE](CURRENT_STATE.md) short and updated. Add dated receipts for
 ## Historical 68000 eligibility / roll comparison V02
 - [Read-only Capstone candidate scan and exact historical pointer relocation evidence](HISTORICAL_ROLL_ELIGIBILITY_V02.md). Verified v0.24/25/26 downloads and CPU hashes, candidate sequences and strong offset drift. **No roll-recovery/grab-immunity function or community fix yet verified**.
 - [Reproducible bounded scan](../tools/historical_m68k_candidates_024_026_v01.py). Next gate is runtime control trace tied to named inputs and state transitions.
+
+## Historical gameplay recovery V03 — bounded runtime, control unverified
+- [V03 receipt and decision gates](HISTORICAL_ROLL_RECOVERY_V03.md), [machine-readable checkpoint](HISTORICAL_ROLL_RECOVERY_V03.json).
+- [Bounded historical runner](../tools/run_historical_boot_inputs_v03.py), [input/state probe](../tools/historical_boot_inputs_v03.lua), [trial-only SQLite import](../tools/ingest_historical_trials_v03.py), [boot visual diagnostic](../tools/run_historical_visual24_v03.py).
+- Three dedicated HBMAME versions execute; no roll/throw function, historical parity or Karin cause accepted. Next gate is controlled match/input readiness, not a gameplay modification.
