@@ -1,16 +1,57 @@
 {
   "schema": "sfz3mix_historical_roll_recovery_v03",
-  "status": "BLOCKED",
+  "status": "PARTIAL",
+  "success_criterion_met": false,
   "scope": "github:neohack2023/sfz3mix-re",
   "host": "DaltonsLaptop574",
   "workspace": "D:\\AIOS_SFZ3MIX_V032",
-  "blocker": "COMMAND_GATE_RESOURCE_CRITICAL",
-  "cpu_percent": 98.7,
-  "canonical_hash_rechecked": false,
-  "new_runtime_observations": 0,
-  "new_assembly_parity_regions": 0,
-  "sqlite_modified": false,
+  "canonical_cpu_sha256": "b5f7a1598e4f91a5113c506505b482b2cd1a19e366fe31471740e45dbd204691",
+  "canonical_hash_before_after": "PASS",
   "rom_modified": false,
+  "versions": [
+    {
+      "version": "0.24",
+      "driver": "sfz3mix24",
+      "frames": 3360,
+      "rows": 343,
+      "log_sha256": "a628dc5cc10a1fbc621b89ff9b5d4c54c12bc49271a57d243ae6dc8c0b5c8896"
+    },
+    {
+      "version": "0.25",
+      "driver": "sfz3mix25",
+      "frames": 3360,
+      "rows": 343,
+      "log_sha256": "3b630b1f3250625fc1e5b51602917d895cff965bf7d3c2d24ef0d67d471e77c6"
+    },
+    {
+      "version": "0.26",
+      "driver": "sfz3mix26",
+      "frames": 3360,
+      "rows": 343,
+      "log_sha256": "8b9fadb4c2484a21f488b41941b74386ed56df67021c5272da5fd2f4e7ee2273"
+    }
+  ],
+  "cpu_state_write_records_per_version": 69,
+  "ir_program_word_equal_samples": 20,
+  "opcode_mapping_verified": false,
+  "selected_state_windows": 16,
+  "animation_pointer_deltas": [
+    416,
+    212
+  ],
+  "controlled_input_delivery_verified": false,
+  "roll_verified": false,
+  "throw_immunity_verified": false,
+  "karin_tested": false,
+  "historical_assembly_regions": 0,
+  "sqlite": {
+    "status": "PASS",
+    "prior_tables_preserved": 42,
+    "new_trial_rows": 3,
+    "integrity": "ok",
+    "foreign_key_violations": 0,
+    "new_function_owners": 0
+  },
   "gates": [
     "PARTIAL",
     "BLOCKED",
@@ -19,7 +60,8 @@
     "BLOCKED",
     "BLOCKED",
     "BLOCKED",
-    "PARTIAL"
+    "PASS"
   ],
-  "next_target": "Fresh command admission; CPU hash/disk/SQLite read-only audit; validate historical v0.24 boot/input/opcode mapping before roll-state tracing."
+  "next_target": "Readiness-triggered match setup with effective input-port reads and visible crouch/stand control; then trace historical roll-command eligibility divergence.",
+  "modification_candidate": null
 }
