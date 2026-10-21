@@ -78,3 +78,8 @@ Keep [CURRENT_STATE](CURRENT_STATE.md) short and updated. Add dated receipts for
 - [Controlled standing harness](../tools/collision_decisions_controlled_v04.lua), [standing runner](../tools/run_collision_decisions_controlled_v04.py), [crouching harness](../tools/collision_decisions_crouch_v04.lua), [crouching runner](../tools/run_collision_decisions_crouch_v04.py).
 - [Verifier](../tools/verify_collision_decisions_v04.py), [preserving migration](../tools/ingest_collision_decisions_v04.py).
 - Current62functions/83calls. Earlier null-owner V03 rows are historical; collision_region_ownership_claims supplies current nonexclusive membership.
+
+## Pinned remote-only historical versions
+- **[Pinned human index](HISTORICAL_RELEASE_PINS_V01.md)** and **[machine-readable URL registry](HISTORICAL_RELEASE_PINS_V01.json)** preserve author-hosted v0.13, v0.23–v0.31 downloads as durable links, without filling Host 02 storage.
+- [Technical release genealogy](HISTORICAL_VERSION_RECOVERY_V01.md) and [author's changelog](https://sfz3mix.github.io/download/log.txt). Pre-v0.13 copies remain unlocated. Fetch only the version needed for a real binary comparison and verify extracted bytes.
+
