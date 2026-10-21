@@ -18,8 +18,8 @@
     "instruction_budget": 25000,
     "budget_hit": false,
     "classification_semantics": "static candidates, not proof of code/data or executed instructions",
-    "total_function_entry_count": 61,
-    "recovered_callable_region_count": 2
+    "total_function_entry_count": 62,
+    "recovered_callable_region_count": 3
   },
   "entries": [
     {
@@ -593,6 +593,21 @@
       "shared_body_function_id": "FUNC_REC_02C19A",
       "exclusive_prefix_end": "0x02C19A",
       "ownership_limit": "Shared leaf blocks; upstream caller owner and indirect entries unresolved"
+    },
+    {
+      "id": "FUNC_REC_037A46",
+      "cpu_address": "0x037A46",
+      "end_exclusive": "0x037A82",
+      "source": "docs/COLLISION_DECISIONS_V04.json",
+      "status": "RUNTIME_CALLABLE_ENTRY_AND_SHARED_BODY_CONFIRMED",
+      "runtime_confirmed": true,
+      "function_bounds_confirmed": true,
+      "linked_community_todos": [
+        "hitboxes"
+      ],
+      "shared_region_id": "REGION_037A56",
+      "exclusive_ownership": false,
+      "role": "opponent grounded near predicate; successful mechanic unresolved"
     }
   ],
   "collision_engine_v02": {
@@ -613,5 +628,14 @@
     "consumer_sites": 10,
     "functions": 61,
     "calls": 80
+  },
+  "collision_decisions_v04": {
+    "receipt": "docs/COLLISION_DECISIONS_V04.json",
+    "function_id": "FUNC_REC_037A46",
+    "supersedes_current_owner_claim_for": "REGION_037A56",
+    "functions": 62,
+    "calls": 83,
+    "success_path_runtime_observed": false,
+    "named_mechanic": "UNRESOLVED"
   }
 }
