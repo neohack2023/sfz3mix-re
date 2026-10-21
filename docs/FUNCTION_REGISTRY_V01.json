@@ -600,5 +600,18 @@
     "database_functions": 61,
     "database_calls": 80,
     "remaining_unowned_collision_sites": 7
+  },
+  "collision_consumer_v03": {
+    "receipt": "docs/COLLISION_CONSUMER_V03.json",
+    "region_id": "REGION_037A56",
+    "cpu_start": "0x037A56",
+    "end_exclusive": "0x037A82",
+    "function_id": null,
+    "status": "RUNTIME_READER_FAR_BRANCH_AND_ASSEMBLY_PARITY_PROVEN",
+    "ownership_limit": "Reader-anchored region; containing function and caller purpose unresolved",
+    "assembly_bytes": 44,
+    "consumer_sites": 10,
+    "functions": 61,
+    "calls": 80
   }
 }
