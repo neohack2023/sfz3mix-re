@@ -202,5 +202,37 @@
     "consumer_sites": 10,
     "near_success_path_runtime_proven": false,
     "hitbox_issue_fixed": false
+  },
+  "collision_decisions_v04": {
+    "receipt": "docs/COLLISION_DECISIONS_V04.json",
+    "reader_pc": "0x037A56",
+    "current_entry_bounded_owner": "FUNC_REC_037A46",
+    "distance_threshold": 48,
+    "near_reads": [
+      31,
+      40,
+      43,
+      45
+    ],
+    "observed_near_opponent_a9": 0,
+    "selector_offset": "0x21E",
+    "selector_zero_store_pc": "0x037A3E",
+    "selector_zero_store_status": "STATIC_ONLY_NOT_OBSERVED",
+    "apply_mode_offset": "0x204",
+    "apply_mode_value": 6,
+    "apply_mode_status": "STATIC_SUCCESS_DATAFLOW_ONLY",
+    "positive_result_observed": false,
+    "move_association": {
+      "character": "Ryu",
+      "label": "standing Button1 punch",
+      "strength_label": "UNVERIFIED",
+      "frame_done_interval": 3349,
+      "animation_cell": 1169038,
+      "state4": 512,
+      "state6": 10,
+      "a9": 1,
+      "animation8": 307167232,
+      "confidence": "INPUT_VISUAL_AND_SAME_INTERVAL_RAM_CORRELATION_NOT_GLOBAL_MOVE_MAP"
+    }
   }
 }
