@@ -87,3 +87,7 @@ Keep [CURRENT_STATE](CURRENT_STATE.md) short and updated. Add dated receipts for
 ## Historical binary dissection (v0.13)
 - [Verified v0.13 chip inventory and interpretation limits](HISTORICAL_V013_DISSECTION_V01.md): user-provided ZIP CRC checked, eight 512KiB CPU chips, historical emulator-name mapping read without execution; no function attribution or gameplay patch.
 - [Remote release pins](HISTORICAL_RELEASE_PINS_V01.md) are lookup-only until archive bytes are independently retrieved and verified for the version being compared.
+
+## Historical v0.23–v0.27 real ROM comparisons
+- [Verified archives, CPU SHA-256, adjacent byte/page deltas and action priorities](HISTORICAL_023_027_COMPARISON_V01.md). All five official releases processed in bounded C: scratch, no ROM binaries retained in GitHub. 0.24→0.25 roll-recovery and 0.25→0.26 grab-immunity are the best next code-level targets; raw byte deltas are **not** identified gameplay routines.
+- [Reproducible bounded comparator script](../tools/compare_historical_23_27_v01.py).
