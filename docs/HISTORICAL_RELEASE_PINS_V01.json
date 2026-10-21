@@ -1,0 +1,125 @@
+{
+  "schema": "sfz3mix_remote_version_pins_v01",
+  "updated_on": "2026-10-21",
+  "authority": "https://sfz3mix.github.io/download.html",
+  "canonical_target": "SFZ3 Mix v0.32 existing extracted ROM on Host02",
+  "goal": "remote-first historical comparison; never require storing every older archive on Host02",
+  "references": [
+    {
+      "version": "0.13",
+      "url": "https://sfz3mix.github.io/download/0.13/sfz3mix13.zip",
+      "archive_format": "zip",
+      "hardware_generation": "CPS2",
+      "provenance": "author_official_download_page",
+      "storage_policy": "remote_url_no_required_host_copy",
+      "availability": "official_site_link_identified_binary_integrity_not_rechecked_this_turn",
+      "priority": "pre_turbo_baseline"
+    },
+    {
+      "version": "0.23",
+      "url": "https://sfz3mix.github.io/download/0.23/sfz3mix.7z",
+      "archive_format": "7z",
+      "hardware_generation": "CPS2Turbo",
+      "provenance": "author_official_download_page",
+      "storage_policy": "remote_url_no_required_host_copy",
+      "availability": "official_site_link_identified_binary_integrity_not_rechecked_this_turn",
+      "priority": "later_diff"
+    },
+    {
+      "version": "0.24",
+      "url": "https://sfz3mix.github.io/download/0.24/sfz3mix.7z",
+      "archive_format": "7z",
+      "hardware_generation": "CPS2Turbo",
+      "provenance": "author_official_download_page",
+      "storage_policy": "remote_url_no_required_host_copy",
+      "availability": "official_site_link_identified_binary_integrity_not_rechecked_this_turn",
+      "priority": "rolling_collision_window"
+    },
+    {
+      "version": "0.25",
+      "url": "https://sfz3mix.github.io/download/0.25/sfz3mix.7z",
+      "archive_format": "7z",
+      "hardware_generation": "CPS2Turbo",
+      "provenance": "author_official_download_page",
+      "storage_policy": "remote_url_no_required_host_copy",
+      "availability": "official_site_link_identified_binary_integrity_not_rechecked_this_turn",
+      "priority": "rolling_collision_window"
+    },
+    {
+      "version": "0.26",
+      "url": "https://sfz3mix.github.io/download/0.26/sfz3mix.7z",
+      "archive_format": "7z",
+      "hardware_generation": "CPS2Turbo",
+      "provenance": "author_official_download_page",
+      "storage_policy": "remote_url_no_required_host_copy",
+      "availability": "official_site_link_identified_binary_integrity_not_rechecked_this_turn",
+      "priority": "rolling_collision_window"
+    },
+    {
+      "version": "0.27",
+      "url": "https://sfz3mix.github.io/download/0.27/sfz3mix.7z",
+      "archive_format": "7z",
+      "hardware_generation": "CPS2Turbo",
+      "provenance": "author_official_download_page",
+      "storage_policy": "remote_url_no_required_host_copy",
+      "availability": "official_site_link_identified_binary_integrity_not_rechecked_this_turn",
+      "priority": "rolling_collision_window"
+    },
+    {
+      "version": "0.28",
+      "url": "https://sfz3mix.github.io/download/0.28/sfz3mix.7z",
+      "archive_format": "7z",
+      "hardware_generation": "CPS2Turbo",
+      "provenance": "author_official_download_page",
+      "storage_policy": "remote_url_no_required_host_copy",
+      "availability": "official_site_link_identified_binary_integrity_not_rechecked_this_turn",
+      "priority": "later_diff"
+    },
+    {
+      "version": "0.29",
+      "url": "https://sfz3mix.github.io/download/0.29/sfz3mix.7z",
+      "archive_format": "7z",
+      "hardware_generation": "CPS2Turbo",
+      "provenance": "author_official_download_page",
+      "storage_policy": "remote_url_no_required_host_copy",
+      "availability": "official_site_link_identified_binary_integrity_not_rechecked_this_turn",
+      "priority": "later_diff"
+    },
+    {
+      "version": "0.30",
+      "url": "https://sfz3mix.github.io/download/0.30/sfz3mix.7z",
+      "archive_format": "7z",
+      "hardware_generation": "CPS2Turbo",
+      "provenance": "author_official_download_page",
+      "storage_policy": "remote_url_no_required_host_copy",
+      "availability": "official_site_link_identified_binary_integrity_not_rechecked_this_turn",
+      "priority": "later_diff"
+    },
+    {
+      "version": "0.31",
+      "url": "https://sfz3mix.github.io/download/0.31/sfz3mix.7z",
+      "archive_format": "7z",
+      "hardware_generation": "CPS2Turbo",
+      "provenance": "author_official_download_page",
+      "storage_policy": "remote_url_no_required_host_copy",
+      "availability": "official_site_link_identified_binary_integrity_not_rechecked_this_turn",
+      "priority": "later_diff"
+    }
+  ],
+  "not_yet_found": [
+    "0.01a",
+    "0.07",
+    "0.07a",
+    "0.07b",
+    "0.08",
+    "0.09",
+    "0.10",
+    "0.11",
+    "0.12",
+    "0.20",
+    "0.21",
+    "0.22"
+  ],
+  "uploaded_v013_note": "v0.13 archive uploaded to a prior chat turn and inspected; this registry deliberately refers to the persistent author-hosted URL, not an ephemeral chat file path.",
+  "reproducibility": "When analysis requires bytes, stream or download only the selected archive into bounded ephemeral workspace, validate CRC/SHA256, emit hash/metadata/patch-only findings and discard temporary copy after user-approved verification. Link alone is not decoded program access. Never commit ROM bytes or redistributable graphics to GitHub."
+}
