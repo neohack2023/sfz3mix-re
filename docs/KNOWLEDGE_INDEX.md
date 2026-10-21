@@ -71,3 +71,10 @@ Keep [CURRENT_STATE](CURRENT_STATE.md) short and updated. Add dated receipts for
 - [Scenario probe](../tools/collision_scenarios_v03.lua), [runner](../tools/run_collision_scenarios_v03.py), [control-flow probe](../tools/collision_scenarios_cf_v03.lua), [control-flow runner](../tools/run_collision_scenarios_cf_v03.py).
 - [Verifier/assembler](../tools/verify_collision_consumer_v03.py), [preserving SQLite migration](../tools/ingest_collision_consumer_v03.py).
 - 037A56 reads+21C and gates a Boolean predicate at unsigned48; far branch proven, near branch and caller purpose unresolved. No new function owner invented.
+
+## V04 caller/result/state recovery — success path unresolved
+- [Engineering receipt and precise gate blocker](COLLISION_DECISIONS_V04.md), [machine-readable trials/callable/parity](COLLISION_DECISIONS_V04.json).
+- [Callable037A46](../tools/collision_predicate_037a46_v04.s), [caller bit0 block](../tools/collision_caller_0379ae_v04.s), [success store](../tools/collision_success_037a3e_v04.s), [mode application](../tools/collision_apply_037ad2_v04.s), [outer caller](../tools/collision_outer_02c584_v04.s).
+- [Controlled standing harness](../tools/collision_decisions_controlled_v04.lua), [standing runner](../tools/run_collision_decisions_controlled_v04.py), [crouching harness](../tools/collision_decisions_crouch_v04.lua), [crouching runner](../tools/run_collision_decisions_crouch_v04.py).
+- [Verifier](../tools/verify_collision_decisions_v04.py), [preserving migration](../tools/ingest_collision_decisions_v04.py).
+- Current62functions/83calls. Earlier null-owner V03 rows are historical; collision_region_ownership_claims supplies current nonexclusive membership.
