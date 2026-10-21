@@ -1,34 +1,33 @@
 # Current state: Street Fighter Zero 3 Mix v0.32
-Updated: 2026-10-20 — Collision Engine Recovery V02.
 
-## Authority and primary artifact
-Scope github:neohack2023/sfz3mix-re; Host02 DaltonsLaptop574; existing workspace D:\AIOS_SFZ3MIX_V032 / token sfz3mix-v032.
-Drive governs routing/registration; GitHub owns repository implementation; Host02 retains execution evidence.
-Per-command preflight returned READY_CONTINUE throughout accepted execution. No registration change.
-Existing tools/sz3mx.03 SHA-256 b5f7a1598e4f91a5113c506505b482b2cd1a19e366fe31471740e45dbd204691 verified unchanged before/after.
-No extraction, clone, gameplay modification or original-ROM write.
+## Authority and integrity
+Scope github:neohack2023/sfz3mix-re; Host02 DaltonsLaptop574; existing D:\AIOS_SFZ3MIX_V032 / token sfz3mix-v032.
+Drive governs scope; GitHub owns tested implementation; Host02 holds local raw evidence.
+Canonical preflight READY_CONTINUE throughout accepted V03 tests.
+ROM tools/sz3mx.03 SHA-256 b5f7a1598e4f91a5113c506505b482b2cd1a19e366fe31471740e45dbd204691, unchanged before/after.
+No clone, extraction, ROM patch or gameplay modification.
 
-## Latest verified recovery
-[Engineering receipt](COLLISION_ENGINE_RECOVERY_V02.md), [machine-readable evidence and parity](COLLISION_ENGINE_RECOVERY_V02.json).
-- FUNC_REC_02C17E is callable from02C07E, returns02C082; three calls to FUNC_REC_02C19A and one final fallthrough share the existing seven leaf blocks.
-- Wrapper prefix28bytes, dual-record block36bytes, selector-update block38bytes all source-authored GNU assembly byte-exact. Existing72-byte V01 leaf source unchanged.
--67 traced instructions establish wrapper/leaf paths, inactive object slots and both sign paths. Stack debugger snapshots remain inconclusive.
--180 bounded operand rows across frame_done intervals2939..2946. Twenty +21C writes, zero reads: bounded negative consumer result.
--029A10 chain reobserved: +CB selectors and +9C pointers lead to record offsets+2/+6. Vertical interval math established; broader push/contact/correction behavior unresolved.
--All seven prior unowned sites now have block/confidence assessments; function IDs stay null.
--SQLite61 functions/80 calls; seven shared-block memberships, four wrapper blocks,180 new operand observations. Transactional backup and integrity/FK checks PASS. Old knowledge preserved; three call owners updated with runtime proof.
+## Latest milestone: first downstream consumer
+[Collision consumer V03 receipt](COLLISION_CONSUMER_V03.md) and [machine-readable reconstruction/parity](COLLISION_CONSUMER_V03.json).
+- Actual read037A56 at receiver+21C, value273; traced unsigned>=48 branch returnsD0=0.
+- Region[037A56,037A82),14 instructions/6blocks,44 source-authored bytes reassemble exactly.
+- The region gates a Boolean opponent-state/animation predicate. Containing function/caller purpose and near-success path remain unresolved; it is not promoted as a new function.
+- Triggered baseline/approach/attack-input/retreat/release phases:147 CPU reads across10sites,40 sampled output writes. All40 match the V01 arithmetic.
+- +21C is an absolute horizontal word-distance from receiver X to a computed opponent edge; no physical push correction or hitbox fix established.
+- Original180 observations preserved:20 rising writes with fixed selectors/records. Exact old named gameplay states were not captured. New baseline reproduces first8writes with raw state/animation/coordinate snapshots.
+- Independent bounded exporter fixture passed before44-byte export; integer ranges,256-byte cap, overwrite refusal. No debugger disassembly commands in V03.
+- Existing SQLite61functions/80calls; new region/sites/CFG and187operands added transactionally. All old rows and4old assembly sources preserved; integrity/FKs PASS.
 
-## Storage and limits
-Final D: free161,480,704 bytes (~154MiB). A debugger disassembly-length expression interpreted A6 as a register and produced an oversized local export. Failure preserved; validator streams explicit ranges; probe corrected to0x expressions but not rerun. Stop extra captures until storage is rechecked.
-No +21C consumer, zero-selector case, exhaustive indirect-call inventory, or owning function for029A10 is established.
-Community hitboxes issue remains OPEN; no fix for hitboxes, Karin rolling or Alpha Counter effects.
+## Prior verified checkpoint
+V01 FUNC_REC_02C19A reads+9C/+CB, indexes8-byte records and writes+21C.
+V02 FUNC_REC_02C17E is a callable wrapper sharing the existing leaf blocks;28/36/38-byte reconstructions retain exact parity.
+Seven original unowned collision sites remain unowned with explicit assessments. Original59candidates/76calls and20box samples/16old addresses remain historical metrics.
+PlayersFF8400/FF8800 spacing400; projectileFF9400 stride100 remains spawn-untested.
 
-## Preserved findings
-Original59 candidates/76 static calls remain historical discovery metrics. Original50-sample/nine-site trace and20 decoded samples/16distinct old records retained.
-Player basesFF8400/FF8800, spacing400; projectileFF9400/stride100 remains spawn-untested.
-V01 FUNC_REC_02C19A and72-byte parity remain valid. No whole-ROM code/data separation or FBNeo/hardware acceptance claimed.
-
-## Next target
-Find static +21C read candidates and choose a bounded reaching scenario. Establish the029A10 chain's callable entry, then observe overlap-positive behavior.
-Use existing evidence/functions_v01.sqlite; never replay migrations over backups or seed-rebuild the database. Shared body memberships must be queried explicitly.
-[Knowledge index](KNOWLEDGE_INDEX.md), [DB/query guide](FUNCTION_DATABASE_V01.md), [community TODO](../TODO.md).
+## Constraints and next target
+D: final111,149,056 bytes (~106MiB). V03 logs total~230KB; larger free-space drift is unexplained. No large capture.
+Trace callers of the037A56 predicate and its D0 result; deliberately exercise its near branch before naming the decision.
+The recovered region's entry is not a confirmed function boundary. Named attacks, full code/data mapping, FBNeo/hardware acceptance and hitbox bug causes remain unproved.
+No community issue is fixed.
+Use existing evidence/functions_v01.sqlite. Migration backups refuse replay; do not seed-rebuild or overwrite the database.
+[Knowledge index](KNOWLEDGE_INDEX.md), [DB guide](FUNCTION_DATABASE_V01.md), [TODO](../TODO.md).
