@@ -39,3 +39,22 @@ Archive listings are discovery leads, not authorization to redistribute copyrigh
 
 ## Status
 RELEASES_IDENTIFIED; OLDER_BINARIES_NOT_ACQUIRED; CHECKSUMS_NOT_VERIFIED. No ROM files moved, no gameplay changes.
+
+## 2026-10-21 correction: actual official historical archive URLs found
+
+**Supersedes the earlier claim that the page only exposed a 0.32 download.** Clicking the author's version labels directly resolves historical archive URLs, and the hosting server reports ZIP or 7z media types. Content integrity still needs downloaded-file inspection; these are **located, not locally verified copies**.
+
+- v0.13: https://sfz3mix.github.io/download/0.13/sfz3mix13.zip
+- v0.23: https://sfz3mix.github.io/download/0.23/sfz3mix.7z
+- v0.24: https://sfz3mix.github.io/download/0.24/sfz3mix.7z
+- v0.25: https://sfz3mix.github.io/download/0.25/sfz3mix.7z
+- v0.26: https://sfz3mix.github.io/download/0.26/sfz3mix.7z
+- v0.27: https://sfz3mix.github.io/download/0.27/sfz3mix.7z
+- v0.28: https://sfz3mix.github.io/download/0.28/sfz3mix.7z
+- v0.29: https://sfz3mix.github.io/download/0.29/sfz3mix.7z
+- v0.30: https://sfz3mix.github.io/download/0.30/sfz3mix.7z
+- v0.31: https://sfz3mix.github.io/download/0.31/sfz3mix.7z
+
+Source: https://sfz3mix.github.io/download.html and author-controlled GitHub Pages repository https://github.com/sfz3mix/sfz3mix.github.io.
+
+**Pre-v0.13 binaries, especially v0.01a and v0.07, remain unlocated in a directly verified author download.** Historical HBMAME set definitions are still strong identifiers but are not proof of files. Do not confuse the Game's original CPS2 data layout with >=0.20 CPS2Turbo data layout. Existing canonical v0.32 ROM remains unchanged.
