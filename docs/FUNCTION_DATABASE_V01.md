@@ -98,3 +98,24 @@ WHERE evidence_id='collision-consumer-v03' AND kind='READ' ORDER BY id;
 ```
 Input labels identify issued controls, not validated move names. Snapshot edge values precede a game write; bus_data is the new value. Prefetched IR at other callbacks is not their opcode proof.
 The near branch and the caller consuming D0 are unresolved. No hitbox issue is fixed.
+
+## V04 callable ownership and negative success-path tests
+[Receipt](COLLISION_DECISIONS_V04.md), [registry](COLLISION_DECISIONS_V04.json).
+FUNC_REC_037A46 is a runtime-confirmed callable enclosing existing REGION_037A56.
+New function_consumer_region_memberships and collision_region_ownership_claims reference V03's existing region/instructions. No old rows are rewritten.
+Three prefix blocks/five instructions join the fourteen shared consumer instructions. Shared false returns remain nonexclusive.
+Totals62functions/83calls; three new calls, five parity regions,200 operands from two complete trials.
+The first prototype's600-event partial log is not imported as a complete trial.
+
+New collision_decision_trials, collision_state_move_observations and collision_decision_dataflow retain confidence, negative outcomes and static/runtime distinctions.
+All old rows and five earlier assembly sources passed preservation checks. SQLite backup evidence/functions_v01_before_collision_decisions_v04.sqlite and integrity/FKs PASS.
+
+```sql
+SELECT r.id,COALESCE(o.function_id,r.function_id) AS current_entry_bounded_owner
+FROM collision_consumer_regions r
+LEFT JOIN collision_region_ownership_claims o ON o.region_id=r.id;
+SELECT * FROM collision_decision_trials;
+SELECT * FROM collision_state_move_observations;
+SELECT * FROM collision_decision_dataflow;
+```
+Selector0/+21E and mode6 success dataflow is byte-verified static evidence; successful application was not observed. Do not label a gameplay mechanic or fix.
