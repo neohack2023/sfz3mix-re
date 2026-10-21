@@ -34,3 +34,7 @@ Use existing evidence/functions_v01.sqlite and retained migration backups.
 ## Historical reference pin (remote-only, 2026-10-21)
 Official v0.13 and v0.23–v0.31 archived releases are pinned as author-site URLs in [HISTORICAL_RELEASE_PINS_V01.md](HISTORICAL_RELEASE_PINS_V01.md) and [JSON](HISTORICAL_RELEASE_PINS_V01.json). Use them directly for documentation research, and fetch one archive temporarily only if byte-level comparisons require it. No new Host02 archive collection is necessary. Original v0.32 remains canonical. The earlier 0.01a build was not located; crouch-cancel removal implementation and community bug fixes remain unverified.
 
+
+## Historical v0.24–0.26 analysis checkpoint (2026-10-21)
+- [Code-level candidate scan V02](HISTORICAL_ROLL_ELIGIBILITY_V02.md) verified three historical CPU programs; observed repeated pointer shifts of +0x1A0 and +0xD4 and uneven region similarity. This is preliminary static evidence, **not recovered named roll or throw-immunity routines**.
+- Prioritize matched v0.24/0.25 roll/landing and v0.25/0.26 grab attempts with bounded emulator traces; normalize relocations before promoting recovered assembly. Do not conflate Karin's animation complaint with historical general roll-recovery changes.
