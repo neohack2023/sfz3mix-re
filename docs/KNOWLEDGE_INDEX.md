@@ -64,3 +64,10 @@ Keep [CURRENT_STATE](CURRENT_STATE.md) short and updated. Add dated receipts for
 - [Wrapper prefix](../tools/collision_wrapper_02c17e_v02.s), [dual-record block](../tools/collision_dual_records_029a42_v02.s), [selector-update block](../tools/collision_selectors_02f666_v02.s).
 - [Bounded probe](../tools/collision_engine_v02.lua), [runner](../tools/run_collision_engine_v02.py), [verifier/assembler](../tools/verify_collision_engine_v02.py), [transactional migration](../tools/ingest_collision_engine_v02.py).
 - SQLite:61 functions/80 calls; explicit shared blocks; unresolved function owners retained. +21C consumer search was bounded-negative. Recheck154MiB free storage before captures.
+
+## First downstream collision-result consumer V03
+- [State review, triggered scenarios, first consumer and limits](COLLISION_CONSUMER_V03.md), [machine-readable evidence/parity](COLLISION_CONSUMER_V03.json).
+- [44-byte consumer assembly](../tools/collision_consumer_037a56_v03.s); [bounded exporter with fixture](../tools/bounded_m68k_export_v01.py).
+- [Scenario probe](../tools/collision_scenarios_v03.lua), [runner](../tools/run_collision_scenarios_v03.py), [control-flow probe](../tools/collision_scenarios_cf_v03.lua), [control-flow runner](../tools/run_collision_scenarios_cf_v03.py).
+- [Verifier/assembler](../tools/verify_collision_consumer_v03.py), [preserving SQLite migration](../tools/ingest_collision_consumer_v03.py).
+- 037A56 reads+21C and gates a Boolean predicate at unsigned48; far branch proven, near branch and caller purpose unresolved. No new function owner invented.
