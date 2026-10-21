@@ -3,7 +3,7 @@ import hashlib,json,shutil,subprocess,tempfile,urllib.request,zlib,xml.etree.Ele
 from pathlib import Path
 R=Path(r"D:\AIOS_SFZ3MIX_V032")
 EXE=R/"runtime_hbmame/hbmame.exe"
-OUT=Path(r"C:\AIOS\_TEMP\SFZ3MIX_V03_VISUAL24")
+OUT=Path(r"C:\AIOS\_TEMP\SFZ3MIX_V03_BOOT_VISUAL")
 PINS={
 24:("9082929fd7075502a35e5f977f3ccb6cc3dbafc35fd9e693e7508fe61ae7b9d7","2fba55f17fa2801cb05ce07a9ba66ed515cb1163dde69592728214a6a77b2f8f"),
 25:("cdde7583917bfb13d0c985184c2ee2fa1b99a266610e544fc1b8f545cbb6a4c6","5ff23470ddec1dadc9935c370adfef4408beb92f0cccac94181d1dfe81e948c4"),
