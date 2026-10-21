@@ -83,3 +83,7 @@ Keep [CURRENT_STATE](CURRENT_STATE.md) short and updated. Add dated receipts for
 - **[Pinned human index](HISTORICAL_RELEASE_PINS_V01.md)** and **[machine-readable URL registry](HISTORICAL_RELEASE_PINS_V01.json)** preserve author-hosted v0.13, v0.23–v0.31 downloads as durable links, without filling Host 02 storage.
 - [Technical release genealogy](HISTORICAL_VERSION_RECOVERY_V01.md) and [author's changelog](https://sfz3mix.github.io/download/log.txt). Pre-v0.13 copies remain unlocated. Fetch only the version needed for a real binary comparison and verify extracted bytes.
 
+
+## Historical binary dissection (v0.13)
+- [Verified v0.13 chip inventory and interpretation limits](HISTORICAL_V013_DISSECTION_V01.md): user-provided ZIP CRC checked, eight 512KiB CPU chips, historical emulator-name mapping read without execution; no function attribution or gameplay patch.
+- [Remote release pins](HISTORICAL_RELEASE_PINS_V01.md) are lookup-only until archive bytes are independently retrieved and verified for the version being compared.
