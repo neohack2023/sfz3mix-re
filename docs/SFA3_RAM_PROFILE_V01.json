@@ -183,5 +183,24 @@
       "0xFF9000"
     ],
     "active_player_count_claim": 2
+  },
+  "historical_checkpoint_notice": "Original profile/db_import/limitations describe V01; explicit collision_engine_v02 and collision_consumer_v03 extensions supersede earlier no-instruction/no-xref statements.",
+  "collision_consumer_v03": {
+    "receipt": "docs/COLLISION_CONSUMER_V03.json",
+    "field_offset": "0x21C",
+    "width_bytes": 2,
+    "semantic_status": "RUNTIME_WRITER_ARITHMETIC_AND_FIRST_CONSUMER_PROVEN",
+    "meaning": "Absolute word distance from receiver X to computed opponent edge; not both-box-edge gap",
+    "writer_pc": "0x02C1DC",
+    "matched_output_samples": 40,
+    "first_consumer_pc": "0x037A56",
+    "consumer_region": "REGION_037A56",
+    "function_id": null,
+    "threshold": 48,
+    "comparison": "unsigned >=48 returns D0=0",
+    "captured_reads": 147,
+    "consumer_sites": 10,
+    "near_success_path_runtime_proven": false,
+    "hitbox_issue_fixed": false
   }
 }
