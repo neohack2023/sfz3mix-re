@@ -1,0 +1,1173 @@
+{
+  "schema": "sfz3mix.collision_consumer.v03",
+  "preflight": "READY_CONTINUE",
+  "rom_sha256": "b5f7a1598e4f91a5113c506505b482b2cd1a19e366fe31471740e45dbd204691",
+  "exporter_fixture": {
+    "status": "PASS",
+    "fixture_bytes": 6,
+    "instructions": 3,
+    "negative_cases": 8,
+    "maximum_export_bytes": 256,
+    "debugger_commands": 0
+  },
+  "old_observations": {
+    "rows": 180,
+    "writes": [
+      {
+        "frame": 2939,
+        "receiver": 16745472,
+        "new_value": 173,
+        "computed_opponent_edge": 445
+      },
+      {
+        "frame": 2939,
+        "receiver": 16746496,
+        "new_value": 171,
+        "computed_opponent_edge": 296
+      },
+      {
+        "frame": 2939,
+        "receiver": 16745472,
+        "new_value": 179,
+        "computed_opponent_edge": 451
+      },
+      {
+        "frame": 2939,
+        "receiver": 16746496,
+        "new_value": 177,
+        "computed_opponent_edge": 296
+      },
+      {
+        "frame": 2940,
+        "receiver": 16745472,
+        "new_value": 186,
+        "computed_opponent_edge": 458
+      },
+      {
+        "frame": 2940,
+        "receiver": 16746496,
+        "new_value": 184,
+        "computed_opponent_edge": 296
+      },
+      {
+        "frame": 2941,
+        "receiver": 16745472,
+        "new_value": 192,
+        "computed_opponent_edge": 464
+      },
+      {
+        "frame": 2941,
+        "receiver": 16746496,
+        "new_value": 190,
+        "computed_opponent_edge": 296
+      },
+      {
+        "frame": 2942,
+        "receiver": 16745472,
+        "new_value": 199,
+        "computed_opponent_edge": 471
+      },
+      {
+        "frame": 2942,
+        "receiver": 16746496,
+        "new_value": 197,
+        "computed_opponent_edge": 296
+      },
+      {
+        "frame": 2943,
+        "receiver": 16745472,
+        "new_value": 205,
+        "computed_opponent_edge": 477
+      },
+      {
+        "frame": 2943,
+        "receiver": 16746496,
+        "new_value": 203,
+        "computed_opponent_edge": 296
+      },
+      {
+        "frame": 2944,
+        "receiver": 16745472,
+        "new_value": 211,
+        "computed_opponent_edge": 483
+      },
+      {
+        "frame": 2944,
+        "receiver": 16746496,
+        "new_value": 209,
+        "computed_opponent_edge": 296
+      },
+      {
+        "frame": 2944,
+        "receiver": 16745472,
+        "new_value": 217,
+        "computed_opponent_edge": 489
+      },
+      {
+        "frame": 2944,
+        "receiver": 16746496,
+        "new_value": 215,
+        "computed_opponent_edge": 296
+      },
+      {
+        "frame": 2945,
+        "receiver": 16745472,
+        "new_value": 223,
+        "computed_opponent_edge": 495
+      },
+      {
+        "frame": 2945,
+        "receiver": 16746496,
+        "new_value": 221,
+        "computed_opponent_edge": 296
+      },
+      {
+        "frame": 2946,
+        "receiver": 16745472,
+        "new_value": 229,
+        "computed_opponent_edge": 501
+      },
+      {
+        "frame": 2946,
+        "receiver": 16746496,
+        "new_value": 227,
+        "computed_opponent_edge": 296
+      }
+    ],
+    "p1_values": [
+      173,
+      179,
+      186,
+      192,
+      199,
+      205,
+      211,
+      217,
+      223,
+      229
+    ],
+    "p2_values": [
+      171,
+      177,
+      184,
+      190,
+      197,
+      203,
+      209,
+      215,
+      221,
+      227
+    ],
+    "state_limit": "No original state/animation/input snapshots; no precise named attack state recoverable",
+    "baseline_reproduction": "First eight game-originated writes reproduced exactly with added state/coordinate snapshots"
+  },
+  "scenarios": {
+    "events": 226,
+    "cpu_reads": 147,
+    "cpu_writes": 40,
+    "bytes": 115370,
+    "phase_summary": [
+      {
+        "phase": "BASELINE",
+        "start_frame": 2939,
+        "sampled_last_frame": 2946,
+        "p1_x_range": [
+          272,
+          272
+        ],
+        "p2_x_range": [
+          460,
+          517
+        ],
+        "p1_edge_range": [
+          166,
+          223
+        ],
+        "p1_state4": [
+          514
+        ],
+        "p1_animations": [
+          1167702,
+          1167722,
+          1168530
+        ],
+        "reads": 0
+      },
+      {
+        "phase": "APPROACH",
+        "start_frame": 2946,
+        "sampled_last_frame": 2986,
+        "p1_x_range": [
+          272,
+          329
+        ],
+        "p2_x_range": [
+          413,
+          569
+        ],
+        "p1_edge_range": [
+          62,
+          280
+        ],
+        "p1_state4": [
+          512,
+          514
+        ],
+        "p1_animations": [
+          1162830,
+          1162998,
+          1163018,
+          1163038,
+          1168530,
+          1168550,
+          1168570,
+          1168590,
+          1168610,
+          1168630,
+          1168650
+        ],
+        "reads": 63
+      },
+      {
+        "phase": "ATTACK",
+        "start_frame": 2988,
+        "sampled_last_frame": 3016,
+        "p1_x_range": [
+          338,
+          341
+        ],
+        "p2_x_range": [
+          387,
+          421
+        ],
+        "p1_edge_range": [
+          24,
+          58
+        ],
+        "p1_state4": [
+          512
+        ],
+        "p1_animations": [
+          1162830,
+          1163058,
+          1168938,
+          1168978,
+          1168998,
+          1169018,
+          1169038
+        ],
+        "reads": 19
+      },
+      {
+        "phase": "RETREAT",
+        "start_frame": 3016,
+        "sampled_last_frame": 3064,
+        "p1_x_range": [
+          272,
+          341
+        ],
+        "p2_x_range": [
+          421,
+          491
+        ],
+        "p1_edge_range": [
+          58,
+          183
+        ],
+        "p1_state4": [
+          512
+        ],
+        "p1_animations": [
+          1162830,
+          1162850,
+          1163102,
+          1163122,
+          1163142,
+          1163162,
+          1163182,
+          1163202,
+          1164122,
+          1164142
+        ],
+        "reads": 55
+      },
+      {
+        "phase": "RELEASE",
+        "start_frame": 3064,
+        "sampled_last_frame": 3072,
+        "p1_x_range": [
+          272,
+          272
+        ],
+        "p2_x_range": [
+          448,
+          448
+        ],
+        "p1_edge_range": [
+          159,
+          159
+        ],
+        "p1_state4": [
+          512
+        ],
+        "p1_animations": [
+          1162830,
+          1162850,
+          1163102,
+          1163122
+        ],
+        "reads": 10
+      }
+    ],
+    "write_arithmetic_checks": 40,
+    "write_transitions": [
+      {
+        "frame": 2939,
+        "phase": "BASELINE",
+        "receiver": 16745472,
+        "old_value": 166,
+        "new_value": 173,
+        "receiver_x": 272,
+        "opponent_x": 467,
+        "selector": 3,
+        "animation": 1167702,
+        "state4": 514
+      },
+      {
+        "frame": 2939,
+        "phase": "BASELINE",
+        "receiver": 16746496,
+        "old_value": 164,
+        "new_value": 171,
+        "receiver_x": 467,
+        "opponent_x": 272,
+        "selector": 10,
+        "animation": 1838116,
+        "state4": 512
+      },
+      {
+        "frame": 2939,
+        "phase": "BASELINE",
+        "receiver": 16745472,
+        "old_value": 173,
+        "new_value": 179,
+        "receiver_x": 272,
+        "opponent_x": 473,
+        "selector": 3,
+        "animation": 1167722,
+        "state4": 514
+      },
+      {
+        "frame": 2939,
+        "phase": "BASELINE",
+        "receiver": 16746496,
+        "old_value": 171,
+        "new_value": 177,
+        "receiver_x": 473,
+        "opponent_x": 272,
+        "selector": 10,
+        "animation": 1838116,
+        "state4": 512
+      },
+      {
+        "frame": 2940,
+        "phase": "BASELINE",
+        "receiver": 16745472,
+        "old_value": 179,
+        "new_value": 186,
+        "receiver_x": 272,
+        "opponent_x": 480,
+        "selector": 3,
+        "animation": 1167722,
+        "state4": 514
+      },
+      {
+        "frame": 2940,
+        "phase": "BASELINE",
+        "receiver": 16746496,
+        "old_value": 177,
+        "new_value": 184,
+        "receiver_x": 480,
+        "opponent_x": 272,
+        "selector": 10,
+        "animation": 1838136,
+        "state4": 512
+      },
+      {
+        "frame": 2941,
+        "phase": "BASELINE",
+        "receiver": 16745472,
+        "old_value": 186,
+        "new_value": 192,
+        "receiver_x": 272,
+        "opponent_x": 486,
+        "selector": 3,
+        "animation": 1167722,
+        "state4": 514
+      },
+      {
+        "frame": 2941,
+        "phase": "BASELINE",
+        "receiver": 16746496,
+        "old_value": 184,
+        "new_value": 190,
+        "receiver_x": 486,
+        "opponent_x": 272,
+        "selector": 10,
+        "animation": 1838136,
+        "state4": 512
+      },
+      {
+        "frame": 2946,
+        "phase": "APPROACH",
+        "receiver": 16745472,
+        "old_value": 223,
+        "new_value": 229,
+        "receiver_x": 272,
+        "opponent_x": 523,
+        "selector": 3,
+        "animation": 1168530,
+        "state4": 514
+      },
+      {
+        "frame": 2946,
+        "phase": "APPROACH",
+        "receiver": 16746496,
+        "old_value": 221,
+        "new_value": 227,
+        "receiver_x": 523,
+        "opponent_x": 272,
+        "selector": 10,
+        "animation": 1838136,
+        "state4": 512
+      },
+      {
+        "frame": 2947,
+        "phase": "APPROACH",
+        "receiver": 16745472,
+        "old_value": 229,
+        "new_value": 234,
+        "receiver_x": 272,
+        "opponent_x": 528,
+        "selector": 3,
+        "animation": 1168530,
+        "state4": 514
+      },
+      {
+        "frame": 2947,
+        "phase": "APPROACH",
+        "receiver": 16746496,
+        "old_value": 227,
+        "new_value": 232,
+        "receiver_x": 528,
+        "opponent_x": 272,
+        "selector": 10,
+        "animation": 1838136,
+        "state4": 512
+      },
+      {
+        "frame": 2948,
+        "phase": "APPROACH",
+        "receiver": 16745472,
+        "old_value": 234,
+        "new_value": 240,
+        "receiver_x": 272,
+        "opponent_x": 534,
+        "selector": 3,
+        "animation": 1168550,
+        "state4": 514
+      },
+      {
+        "frame": 2948,
+        "phase": "APPROACH",
+        "receiver": 16746496,
+        "old_value": 232,
+        "new_value": 238,
+        "receiver_x": 534,
+        "opponent_x": 272,
+        "selector": 10,
+        "animation": 1838136,
+        "state4": 512
+      },
+      {
+        "frame": 2948,
+        "phase": "APPROACH",
+        "receiver": 16745472,
+        "old_value": 240,
+        "new_value": 245,
+        "receiver_x": 272,
+        "opponent_x": 539,
+        "selector": 3,
+        "animation": 1168550,
+        "state4": 514
+      },
+      {
+        "frame": 2948,
+        "phase": "APPROACH",
+        "receiver": 16746496,
+        "old_value": 238,
+        "new_value": 243,
+        "receiver_x": 539,
+        "opponent_x": 272,
+        "selector": 10,
+        "animation": 1838136,
+        "state4": 512
+      },
+      {
+        "frame": 2988,
+        "phase": "ATTACK",
+        "receiver": 16745472,
+        "old_value": 43,
+        "new_value": 37,
+        "receiver_x": 341,
+        "opponent_x": 400,
+        "selector": 3,
+        "animation": 1163058,
+        "state4": 512
+      },
+      {
+        "frame": 2988,
+        "phase": "ATTACK",
+        "receiver": 16746496,
+        "old_value": 45,
+        "new_value": 39,
+        "receiver_x": 400,
+        "opponent_x": 341,
+        "selector": 1,
+        "animation": 1816356,
+        "state4": 512
+      },
+      {
+        "frame": 2989,
+        "phase": "ATTACK",
+        "receiver": 16745472,
+        "old_value": 37,
+        "new_value": 34,
+        "receiver_x": 341,
+        "opponent_x": 397,
+        "selector": 3,
+        "animation": 1169018,
+        "state4": 512
+      },
+      {
+        "frame": 2989,
+        "phase": "ATTACK",
+        "receiver": 16746496,
+        "old_value": 39,
+        "new_value": 36,
+        "receiver_x": 397,
+        "opponent_x": 341,
+        "selector": 1,
+        "animation": 1816356,
+        "state4": 512
+      },
+      {
+        "frame": 2990,
+        "phase": "ATTACK",
+        "receiver": 16745472,
+        "old_value": 34,
+        "new_value": 30,
+        "receiver_x": 341,
+        "opponent_x": 393,
+        "selector": 3,
+        "animation": 1169018,
+        "state4": 512
+      },
+      {
+        "frame": 2990,
+        "phase": "ATTACK",
+        "receiver": 16746496,
+        "old_value": 36,
+        "new_value": 32,
+        "receiver_x": 393,
+        "opponent_x": 341,
+        "selector": 1,
+        "animation": 1816356,
+        "state4": 512
+      },
+      {
+        "frame": 2991,
+        "phase": "ATTACK",
+        "receiver": 16745472,
+        "old_value": 30,
+        "new_value": 27,
+        "receiver_x": 341,
+        "opponent_x": 390,
+        "selector": 3,
+        "animation": 1169018,
+        "state4": 512
+      },
+      {
+        "frame": 2991,
+        "phase": "ATTACK",
+        "receiver": 16746496,
+        "old_value": 32,
+        "new_value": 29,
+        "receiver_x": 390,
+        "opponent_x": 341,
+        "selector": 1,
+        "animation": 1816376,
+        "state4": 512
+      },
+      {
+        "frame": 3016,
+        "phase": "RETREAT",
+        "receiver": 16745472,
+        "old_value": 58,
+        "new_value": 60,
+        "receiver_x": 341,
+        "opponent_x": 423,
+        "selector": 3,
+        "animation": 1162850,
+        "state4": 512
+      },
+      {
+        "frame": 3016,
+        "phase": "RETREAT",
+        "receiver": 16746496,
+        "old_value": 60,
+        "new_value": 62,
+        "receiver_x": 423,
+        "opponent_x": 341,
+        "selector": 1,
+        "animation": 1822372,
+        "state4": 512
+      },
+      {
+        "frame": 3017,
+        "phase": "RETREAT",
+        "receiver": 16745472,
+        "old_value": 60,
+        "new_value": 62,
+        "receiver_x": 341,
+        "opponent_x": 425,
+        "selector": 3,
+        "animation": 1162850,
+        "state4": 512
+      },
+      {
+        "frame": 3017,
+        "phase": "RETREAT",
+        "receiver": 16746496,
+        "old_value": 62,
+        "new_value": 64,
+        "receiver_x": 425,
+        "opponent_x": 341,
+        "selector": 1,
+        "animation": 1822392,
+        "state4": 512
+      },
+      {
+        "frame": 3017,
+        "phase": "RETREAT",
+        "receiver": 16745472,
+        "old_value": 62,
+        "new_value": 64,
+        "receiver_x": 341,
+        "opponent_x": 427,
+        "selector": 3,
+        "animation": 1163102,
+        "state4": 512
+      },
+      {
+        "frame": 3017,
+        "phase": "RETREAT",
+        "receiver": 16746496,
+        "old_value": 64,
+        "new_value": 66,
+        "receiver_x": 427,
+        "opponent_x": 341,
+        "selector": 1,
+        "animation": 1822392,
+        "state4": 512
+      },
+      {
+        "frame": 3018,
+        "phase": "RETREAT",
+        "receiver": 16745472,
+        "old_value": 64,
+        "new_value": 67,
+        "receiver_x": 339,
+        "opponent_x": 428,
+        "selector": 3,
+        "animation": 1163102,
+        "state4": 512
+      },
+      {
+        "frame": 3018,
+        "phase": "RETREAT",
+        "receiver": 16746496,
+        "old_value": 66,
+        "new_value": 69,
+        "receiver_x": 428,
+        "opponent_x": 339,
+        "selector": 1,
+        "animation": 1822392,
+        "state4": 512
+      },
+      {
+        "frame": 3064,
+        "phase": "RELEASE",
+        "receiver": 16745472,
+        "old_value": 159,
+        "new_value": 159,
+        "receiver_x": 272,
+        "opponent_x": 448,
+        "selector": 1,
+        "animation": 1163122,
+        "state4": 512
+      },
+      {
+        "frame": 3064,
+        "phase": "RELEASE",
+        "receiver": 16746496,
+        "old_value": 156,
+        "new_value": 156,
+        "receiver_x": 448,
+        "opponent_x": 272,
+        "selector": 1,
+        "animation": 1830040,
+        "state4": 512
+      },
+      {
+        "frame": 3065,
+        "phase": "RELEASE",
+        "receiver": 16745472,
+        "old_value": 159,
+        "new_value": 159,
+        "receiver_x": 272,
+        "opponent_x": 448,
+        "selector": 1,
+        "animation": 1162830,
+        "state4": 512
+      },
+      {
+        "frame": 3065,
+        "phase": "RELEASE",
+        "receiver": 16746496,
+        "old_value": 156,
+        "new_value": 156,
+        "receiver_x": 448,
+        "opponent_x": 272,
+        "selector": 1,
+        "animation": 1830040,
+        "state4": 512
+      },
+      {
+        "frame": 3065,
+        "phase": "RELEASE",
+        "receiver": 16745472,
+        "old_value": 159,
+        "new_value": 159,
+        "receiver_x": 272,
+        "opponent_x": 448,
+        "selector": 1,
+        "animation": 1162830,
+        "state4": 512
+      },
+      {
+        "frame": 3065,
+        "phase": "RELEASE",
+        "receiver": 16746496,
+        "old_value": 156,
+        "new_value": 156,
+        "receiver_x": 448,
+        "opponent_x": 272,
+        "selector": 1,
+        "animation": 1830040,
+        "state4": 512
+      },
+      {
+        "frame": 3066,
+        "phase": "RELEASE",
+        "receiver": 16745472,
+        "old_value": 159,
+        "new_value": 159,
+        "receiver_x": 272,
+        "opponent_x": 448,
+        "selector": 1,
+        "animation": 1162830,
+        "state4": 512
+      },
+      {
+        "frame": 3066,
+        "phase": "RELEASE",
+        "receiver": 16746496,
+        "old_value": 156,
+        "new_value": 156,
+        "receiver_x": 448,
+        "opponent_x": 272,
+        "selector": 1,
+        "animation": 1830040,
+        "state4": 512
+      }
+    ],
+    "read_sites": [
+      {
+        "pc": 195382,
+        "count": 17,
+        "values": [
+          29,
+          32,
+          36,
+          39,
+          45,
+          70,
+          76,
+          83,
+          89,
+          95,
+          102,
+          108,
+          115,
+          121,
+          128,
+          134,
+          140
+        ],
+        "phases": [
+          "APPROACH",
+          "ATTACK"
+        ],
+        "function_id": null
+      },
+      {
+        "pc": 195426,
+        "count": 1,
+        "values": [
+          152
+        ],
+        "phases": [
+          "APPROACH"
+        ],
+        "function_id": null
+      },
+      {
+        "pc": 220874,
+        "count": 4,
+        "values": [
+          158,
+          172,
+          180,
+          273
+        ],
+        "phases": [
+          "APPROACH",
+          "RETREAT"
+        ],
+        "function_id": null
+      },
+      {
+        "pc": 220916,
+        "count": 4,
+        "values": [
+          158,
+          172,
+          180,
+          273
+        ],
+        "phases": [
+          "APPROACH",
+          "RETREAT"
+        ],
+        "function_id": null
+      },
+      {
+        "pc": 222290,
+        "count": 1,
+        "values": [
+          156
+        ],
+        "phases": [
+          "RETREAT"
+        ],
+        "function_id": null
+      },
+      {
+        "pc": 226538,
+        "count": 24,
+        "values": [
+          158,
+          161,
+          162,
+          165,
+          167,
+          168,
+          171,
+          172,
+          173,
+          176,
+          177,
+          180,
+          212,
+          218,
+          223,
+          229,
+          234,
+          240,
+          245,
+          251,
+          256,
+          262,
+          267,
+          273
+        ],
+        "phases": [
+          "APPROACH",
+          "RETREAT"
+        ],
+        "function_id": null
+      },
+      {
+        "pc": 226562,
+        "count": 24,
+        "values": [
+          158,
+          162,
+          165,
+          166,
+          167,
+          168,
+          170,
+          171,
+          172,
+          173,
+          177,
+          180,
+          212,
+          218,
+          223,
+          229,
+          234,
+          240,
+          245,
+          251,
+          256,
+          262,
+          267,
+          273
+        ],
+        "phases": [
+          "APPROACH",
+          "RETREAT"
+        ],
+        "function_id": null
+      },
+      {
+        "pc": 227848,
+        "count": 46,
+        "values": [
+          26,
+          29,
+          32,
+          36,
+          39,
+          45,
+          60,
+          62,
+          64,
+          66,
+          69,
+          73,
+          77,
+          81,
+          85,
+          89,
+          91,
+          93,
+          156,
+          218,
+          223,
+          229,
+          234,
+          240,
+          245,
+          251,
+          256,
+          262,
+          267,
+          273
+        ],
+        "phases": [
+          "APPROACH",
+          "ATTACK",
+          "RELEASE",
+          "RETREAT"
+        ],
+        "function_id": null
+      },
+      {
+        "pc": 227926,
+        "count": 24,
+        "values": [
+          158,
+          161,
+          162,
+          165,
+          167,
+          168,
+          171,
+          172,
+          173,
+          176,
+          177,
+          180,
+          218,
+          223,
+          229,
+          234,
+          240,
+          245,
+          251,
+          256,
+          262,
+          267,
+          273
+        ],
+        "phases": [
+          "APPROACH",
+          "RETREAT"
+        ],
+        "function_id": null
+      },
+      {
+        "pc": 234760,
+        "count": 2,
+        "values": [
+          24,
+          37
+        ],
+        "phases": [
+          "ATTACK"
+        ],
+        "function_id": null
+      }
+    ],
+    "trace_sha256": "09d5c6b75d2ac71b7611ac940b3670bc189087490887e7be9c3726d644911f08"
+  },
+  "consumer": {
+    "region_id": "REGION_037A56",
+    "start": 227926,
+    "end_exclusive": 227970,
+    "function_id": null,
+    "entry_status": "RUNTIME_READER_ANCHORED_REGION_NOT_VERIFIED_FUNCTION_ENTRY",
+    "first_read": {
+      "frame": 2955,
+      "phase": "APPROACH",
+      "pc": 227926,
+      "receiver": 16746496,
+      "address": 16747036,
+      "value": 273,
+      "width_bytes": 2,
+      "ir": 3182
+    },
+    "instructions": [
+      {
+        "pc": 227926,
+        "size": 6,
+        "instruction": "cmpi.w #$30, $21c(a6)"
+      },
+      {
+        "pc": 227932,
+        "size": 2,
+        "instruction": "bcc.b $37a7a"
+      },
+      {
+        "pc": 227934,
+        "size": 4,
+        "instruction": "tst.b $a9(a4)"
+      },
+      {
+        "pc": 227938,
+        "size": 2,
+        "instruction": "beq.b $37a7a"
+      },
+      {
+        "pc": 227940,
+        "size": 6,
+        "instruction": "cmpi.w #$200, $4(a4)"
+      },
+      {
+        "pc": 227946,
+        "size": 2,
+        "instruction": "bne.b $37a7a"
+      },
+      {
+        "pc": 227948,
+        "size": 4,
+        "instruction": "movea.w $38(a6), a4"
+      },
+      {
+        "pc": 227952,
+        "size": 4,
+        "instruction": "movea.l $1c(a4), a4"
+      },
+      {
+        "pc": 227956,
+        "size": 4,
+        "instruction": "move.l $8(a4), d0"
+      },
+      {
+        "pc": 227960,
+        "size": 2,
+        "instruction": "bne.b $37a7e"
+      },
+      {
+        "pc": 227962,
+        "size": 2,
+        "instruction": "moveq #$0, d0"
+      },
+      {
+        "pc": 227964,
+        "size": 2,
+        "instruction": "rts "
+      },
+      {
+        "pc": 227966,
+        "size": 2,
+        "instruction": "moveq #$1, d0"
+      },
+      {
+        "pc": 227968,
+        "size": 2,
+        "instruction": "rts "
+      }
+    ],
+    "semantics": "Unsigned distance >=48 returns D0=0. Otherwise require opponent+A9 nonzero, opponent+4==0200, and opponent animation+8 longword nonzero to return D0=1. A4 must be the opponent on entry; broader caller purpose unresolved.",
+    "branch_runtime": {
+      "path": [
+        227932,
+        227962,
+        227964
+      ],
+      "result_d0": 0,
+      "near_path_observed": false,
+      "trace_sha256": "5f619eeb9977ba22ce0be7113216f110bd11fad68bbe9b68d944c90d0aa8281f"
+    },
+    "parity": {
+      "source": "tools/collision_consumer_037a56_v03.s",
+      "source_sha256": "0afcfba167206ae02cc185f63cbf61349e5c8b00aef2d5a35232f2e437b572fa",
+      "size": 44,
+      "expected_sha256": "392e38ccac8f3ea8919bc0d68d6d32daeb3144bf0e4ceaefe8095352aa0cbdad",
+      "assembled_sha256": "392e38ccac8f3ea8919bc0d68d6d32daeb3144bf0e4ceaefe8095352aa0cbdad",
+      "mismatch_addresses": [],
+      "decision": "PASS"
+    }
+  },
+  "evidence": {
+    "original_observations_sha256": "e02c8ab5a5ceb3edcc9fdff2f159ff0ae81c806359907323d7cbf4846bc8f0bf",
+    "original_scenario_path": "D:\\AIOS_SFZ3MIX_V032\\evidence\\collision_scenarios_v03.jsonl",
+    "control_trace_path": "D:\\AIOS_SFZ3MIX_V032\\evidence\\consumer_cf_v03_far.txt"
+  },
+  "limits": [
+    "Input phases are controlled attempts, not validated animation-name classifications",
+    "Observer snapshots are not CPU reads; write snapshots precede the game write",
+    "IR matched first consumer opcode; IR at other bus callbacks may be prefetched and must not be treated as their opcode",
+    "Close-case input phase reached edge24 but first predicate's near-return path was not observed",
+    "All ten consumer-site containing function owners remain null",
+    "No physical pushbox correction or hitbox restoration cause established",
+    "Static pattern matches include false positives and are not promoted",
+    "All V01/V02 sources and SQLite rows retained; no extra large exports"
+  ],
+  "final_free_bytes": 117440512
+}
